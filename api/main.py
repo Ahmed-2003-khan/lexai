@@ -96,3 +96,4 @@ Instrumentator().instrument(app).expose(app)
 
 app.include_router(health.router, prefix="/health")
 app.include_router(query.router, prefix="/api/v1")
+app.include_router(ingest.router, prefix="/api/v1")
