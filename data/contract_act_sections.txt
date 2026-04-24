@@ -1,0 +1,59 @@
+=== Section 2(a): Proposal ===
+A proposal is made when one person signifies to another his willingness to do something or to abstain from doing something, with the intention of obtaining the assent of that other person. The essence of a proposal lies in the clear expression of willingness coupled with an intention to create legal relations upon acceptance. The communication must be such that it is capable of being understood by the person to whom it is made. A proposal may be express or implied, and it forms the foundation of every contract. Without a valid proposal, no enforceable agreement can arise under the law.
+
+=== Section 2(b): Promise ===
+A promise arises when the person to whom a proposal is made signifies his assent to it. Upon such acceptance, the proposal is said to be accepted and becomes a promise. The communication of acceptance must be absolute and unqualified, and it must be made in a manner prescribed or reasonable under the circumstances. Once acceptance is complete, the parties become bound by the terms of the promise. A promise may be express or implied, and it constitutes one side of an agreement. The legal effect of a promise depends upon valid acceptance and lawful consideration.
+
+=== Section 2(d): Consideration ===
+Consideration refers to something done, abstained from, or promised to be done at the desire of the promisor by the promisee or any other person. It is an essential element of a valid contract and represents the price for which the promise is bought. Consideration may be past, present, or future, and it must be lawful. It need not move from the promisee alone; a third party may also provide consideration. However, it must be real and not illusory. Agreements without consideration are generally void, subject to specific exceptions provided by law.
+
+=== Section 2(e): Agreement ===
+An agreement is defined as every promise or set of promises forming consideration for each other. It arises when one party makes a proposal and the other accepts it, resulting in mutual promises. Agreements may be social, domestic, or legal, but only those intended to create legal obligations are enforceable. Thus, while every contract is an agreement, not every agreement is a contract. The presence of mutual consent, lawful consideration, and intention to create legal relations distinguishes enforceable agreements from non-binding arrangements.
+
+=== Section 2(g): Void Agreement ===
+A void agreement is one that is not enforceable by law from the very beginning. Such agreements lack one or more essential elements required for a valid contract, such as lawful consideration or free consent. Agreements that are illegal, uncertain, or opposed to public policy fall within this category. A void agreement creates no legal rights or obligations between the parties. It is treated as if it never existed in the eyes of law, and neither party can enforce it or claim damages for its breach.
+
+=== Section 2(h): Contract ===
+A contract is an agreement enforceable by law. It arises when an agreement satisfies all legal requirements, including free consent of competent parties, lawful consideration, and lawful object, and is not expressly declared void. Contracts create binding obligations between parties, and failure to perform may result in legal consequences. The transformation of an agreement into a contract depends upon enforceability. Thus, enforceability is the distinguishing feature that separates a contract from a mere agreement.
+
+=== Section 10: What Agreements are Contracts ===
+All agreements become contracts if they are made with the free consent of parties competent to contract, for lawful consideration and lawful object, and are not expressly declared void. This section lays down essential elements of a valid contract. Free consent ensures absence of coercion, fraud, or undue influence. Competency relates to legal capacity, including age and soundness of mind. Lawful consideration and object ensure that the agreement is not illegal or against public policy. Any agreement lacking these elements is not enforceable as a contract.
+
+=== Section 11: Who is Competent to Contract ===
+Every person is competent to contract who has attained the age of majority, is of sound mind, and is not disqualified from contracting by any law. A person of sound mind is one who can understand the contract and form a rational judgment about its effects. Persons disqualified by law include minors, persons of unsound mind, and those barred by specific statutes. Agreements entered into by incompetent persons are generally void. This provision ensures that only legally capable individuals can enter binding contractual obligations.
+
+=== Section 13: Consent Defined ===
+Consent is said to exist when two or more persons agree upon the same thing in the same sense. This concept is often described as “consensus ad idem.” It requires that both parties have a common understanding of the subject matter and terms of the agreement. If there is misunderstanding, mistake, or ambiguity, true consent does not exist. Without consent, no agreement can be formed. Thus, consent is the foundation upon which contractual relationships are built.
+
+=== Section 14: Free Consent Defined ===
+Consent is considered free when it is not caused by coercion, undue influence, fraud, misrepresentation, or mistake. If any of these factors affect consent, the agreement may become voidable or void depending on circumstances. Free consent ensures that parties enter contracts voluntarily and with full understanding. The absence of free consent undermines the legitimacy of the agreement and allows the aggrieved party to avoid it.
+
+=== Section 15: Coercion Defined ===
+Coercion involves committing or threatening to commit any act forbidden by the Pakistan Penal Code, or unlawfully detaining or threatening to detain property, with the intention of causing a person to enter into an agreement. The presence of coercion vitiates consent. Agreements formed under coercion are voidable at the option of the party whose consent was obtained through such means. The law aims to prevent use of force or unlawful pressure in contractual dealings.
+
+=== Section 16: Undue Influence Defined ===
+Undue influence arises where one party is in a position to dominate the will of another and uses that position to obtain an unfair advantage. Relationships such as guardian-ward, doctor-patient, or trustee-beneficiary may give rise to such influence. The law presumes undue influence in certain relationships unless proven otherwise. Contracts induced by undue influence are voidable. The section ensures fairness and prevents exploitation of weaker parties.
+
+=== Section 17: Fraud Defined ===
+Fraud includes acts committed with intent to deceive, such as false representation, active concealment of facts, promises without intention of performance, or any act designed to mislead. Fraud vitiates consent and makes the contract voidable. The injured party may rescind the contract or claim damages. Silence may also amount to fraud where there is a duty to speak. The key element is intention to deceive.
+
+=== Section 18: Misrepresentation Defined ===
+Misrepresentation involves false statements made without intent to deceive, breach of duty causing advantage, or innocent mistakes leading to agreement. Unlike fraud, there is no deliberate intention to mislead. However, it still affects consent and makes the contract voidable. The aggrieved party may rescind the contract but generally cannot claim damages unless fraud is proven.
+
+=== Section 19: Voidability of Agreements without Free Consent ===
+When consent is caused by coercion, fraud, or misrepresentation, the agreement is voidable at the option of the affected party. This means the aggrieved party may either rescind or affirm the contract. If the contract is affirmed, it becomes binding. This provision protects parties from unfair agreements while maintaining flexibility in enforcement.
+
+=== Section 23: Lawful Consideration and Object ===
+Consideration or object of an agreement is lawful unless it is forbidden by law, defeats legal provisions, is fraudulent, causes injury, or is immoral or opposed to public policy. Agreements with unlawful consideration or object are void. This section ensures that contracts operate within legal and ethical boundaries.
+
+=== Section 25: Agreement without Consideration Void — Exceptions ===
+Agreements without consideration are generally void. However, exceptions include agreements made out of natural love and affection between close relations if written and registered, promises to compensate voluntary acts, and promises to pay time-barred debts if made in writing. These exceptions recognize moral obligations and fairness in certain circumstances.
+
+=== Section 56: Agreement to do Impossible Act ===
+An agreement to do an act impossible in itself is void. A contract becomes void when performance becomes impossible or unlawful due to events beyond control. This doctrine of frustration discharges parties from obligations when circumstances fundamentally change. The section ensures that parties are not held liable for impossibility.
+
+=== Section 73: Compensation for Breach of Contract ===
+When a contract is broken, the injured party is entitled to compensation for losses arising naturally or contemplated at the time of contract. Remote or indirect damages are not recoverable. The aim is to place the injured party in the position he would have been if the contract was performed.
+
+=== Section 74: Compensation where Penalty Stipulated ===
+Where a contract specifies a sum payable upon breach, the Court awards reasonable compensation not exceeding that amount. The actual loss need not be strictly proved, but compensation must be fair. The section prevents excessive penalties while ensuring justice to the aggrieved party.

@@ -1,0 +1,60 @@
+
+=== Section 299: Definitions ===
+In this Chapter relating to offences affecting the human body, various technical terms are defined to clarify liability and punishment. An “adult” refers to a person who has attained eighteen years of age. “Arsh” means the pre-determined compensation specified in law for certain kinds of hurt, payable to the victim or heirs. “Daman” refers to compensation assessed by the Court in cases where arsh is not applicable. “Diyat” is the specified financial compensation payable to the legal heirs of a deceased victim under Section 323. The term “qatl” denotes causing the death of a person by any act. “Qisas” refers to retributive punishment, meaning inflicting similar harm on the offender as caused to the victim, including death in cases of intentional killing. These definitions govern interpretation of subsequent provisions.
+
+=== Section 300: Qatl-i-Amd ===
+Qatl-i-amd refers to intentional homicide. A person commits this offence when he causes the death of another with the intention of causing death, or with the intention of causing bodily injury that is likely to result in death in the ordinary course of nature. It also includes acts done with knowledge that they are so imminently dangerous that death will probably result. The section emphasizes both intention and knowledge as mental elements. The nature of the act, surrounding circumstances, and probability of death are all relevant factors in determining liability under this section.
+
+=== Section 302: Punishment of Qatl-i-Amd ===
+Punishment for qatl-i-amd depends on proof and applicability of Islamic principles. The offender may be punished with death as qisas where legal requirements are fulfilled. Alternatively, where strict proof for qisas is not available, the Court may award death or life imprisonment as ta’zir based on facts and circumstances. In cases where qisas is not applicable according to Islamic injunctions, the offender may be punished with imprisonment up to twenty-five years. The section reflects a dual system combining Islamic punishments and discretionary judicial sentencing.
+
+=== Section 304: Proof of Qatl-i-Amd Liable to Qisas ===
+Proof for imposing qisas must meet strict evidentiary standards. It may be established through a voluntary and truthful confession made before a competent Court, or through evidence fulfilling requirements under Qanun-e-Shahadat, particularly Article 17 regarding witnesses. The burden is high because qisas involves irreversible punishment. Courts carefully scrutinize credibility, voluntariness of confession, and reliability of witnesses before awarding such punishment.
+
+=== Section 319: Punishment for Qatl-i-Khata ===
+Qatl-i-khata refers to causing death without intention, typically by mistake. The primary punishment is payment of diyat to the heirs of the deceased. However, if the act involves rashness or negligence (excluding driving cases covered separately), the offender may also face imprisonment up to five years as ta’zir. The section distinguishes between pure accident and negligent conduct, imposing additional liability where carelessness contributes to death.
+
+=== Section 320: Punishment for Qatl-i-Khata by Rash or Negligent Driving ===
+Where death is caused specifically through rash or negligent driving, the offender is liable to diyat and may also face imprisonment up to ten years. Courts consider factors such as speed, traffic conditions, and degree of negligence. This provision reflects the seriousness of road-related fatalities and imposes stricter punishment compared to general negligence cases.
+
+=== Section 351: Assault ===
+Assault is committed when a person makes a gesture or preparation intending or knowing it is likely to cause another person to apprehend the use of criminal force. Actual physical contact is not required. The essence lies in creating fear or anticipation of harm. The intention or knowledge of likely fear is crucial. Even raising a weapon or threatening gesture may constitute assault if it causes reasonable apprehension.
+
+=== Section 378: Theft ===
+Theft involves dishonest intention to take movable property out of another person’s possession without consent. The offence is complete once the property is moved for that purpose. Possession, lack of consent, and dishonest intention are essential elements. Even slight movement of property qualifies as completion of the offence. The section protects ownership and possession rights against unlawful interference.
+
+=== Section 379: Punishment for Theft ===
+Whoever commits theft is punishable with imprisonment up to three years, or fine, or both. The Court considers factors such as value of property, circumstances, and prior conduct of the offender while determining punishment. The provision provides flexibility in sentencing depending on severity.
+
+=== Section 380: Theft in Dwelling House ===
+Theft committed in a dwelling house or place used for custody of property is treated more seriously. The punishment may extend up to seven years imprisonment along with fine. The law enhances punishment due to breach of security and trust associated with private premises.
+
+=== Section 383: Extortion ===
+Extortion occurs when a person intentionally puts another in fear of injury and thereby dishonestly induces delivery of property or valuable security. The key elements include fear, inducement, and dishonest intention. The injury may be physical, reputational, or economic. Consent obtained under fear is not considered free.
+
+=== Section 390: Robbery ===
+Robbery is an aggravated form of theft or extortion. Theft becomes robbery when violence, threat of instant harm, or wrongful restraint is used during commission or escape. Extortion becomes robbery when fear of immediate harm is used in the presence of the victim. The defining feature is immediacy and use of force.
+
+=== Section 391: Dacoity ===
+Dacoity is committed when five or more persons jointly commit or attempt robbery. All participants, including those aiding, are equally liable. The section emphasizes collective criminal activity and increases seriousness due to organized nature of the offence.
+
+=== Section 406: Punishment for Criminal Breach of Trust ===
+Criminal breach of trust occurs when a person entrusted with property dishonestly misappropriates or converts it. Punishment may extend to seven years imprisonment, or fine, or both. Trust and fiduciary responsibility are central elements, and violation attracts criminal liability.
+
+=== Section 415: Cheating ===
+Cheating involves deception leading to dishonest or fraudulent inducement. The victim is caused to deliver property or act in a way causing harm to body, mind, reputation, or property. Intention at the time of inducement is crucial for establishing the offence.
+
+=== Section 416: Cheating by Personation ===
+This offence occurs when a person cheats by pretending to be someone else or by substituting identity. It includes false representation of identity to deceive others. The deception must be intentional and aimed at wrongful gain.
+
+=== Section 420: Cheating and Dishonestly Inducing Delivery of Property ===
+This is a more serious form of cheating involving delivery of property or alteration/destruction of valuable security. Punishment may extend to seven years imprisonment and fine. It requires proof of dishonest intention at the outset and actual inducement leading to loss.
+
+=== Section 441: Criminal Trespass ===
+Criminal trespass occurs when a person enters property with intent to commit an offence or to intimidate, insult, or annoy the possessor. Even lawful entry followed by unlawful intent qualifies. The focus is on intention and unauthorized interference with possession.
+
+=== Section 499: Defamation ===
+Defamation involves making or publishing imputations harming a person’s reputation. It may be through words, signs, or visible representations. Intention or knowledge of likely harm is required. The law also provides exceptions such as truth for public good and fair comment.
+
+=== Section 506: Punishment for Criminal Intimidation ===
+Criminal intimidation is punishable with imprisonment up to two years, or fine, or both. Where threats involve death, grievous hurt, or serious harm, punishment may extend to seven years. The offence centers on threats intended to cause alarm or compel action.
