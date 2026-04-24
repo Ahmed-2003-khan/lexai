@@ -1,20 +1,53 @@
 === Section 496: In What Cases Bail to be Taken — Bailable Offences ===
-This section establishes an absolute right to bail in bailable offences. When a person accused of a bailable offence is arrested or detained without warrant by a police officer, or appears or is brought before a Court, and is prepared at any stage to give bail, such person shall be released. The use of the word “shall” makes it mandatory, leaving no discretion with the Court or police, except regarding the amount and conditions of bail. Bail may be furnished with or without sureties, depending on circumstances. The provision reflects the principle that detention should not be punitive where the offence is not serious, ensuring personal liberty is preserved unless legally necessary.
-
+When any person other than a person accused of a
+non-bailable offence is arrested or detained without warrant by an officer incharge of a
+police station or appear or is brought, before a Court, and is prepared at any time while in
+the custody of such officer or at: any stage of the proceedings, before such Court to give
+bail, such person shall be released on bail, Provided that such officer or Court, if he or it
+thinks fit, may, instead of taking bail from such person, discharge him on his executing a
+bond without sureties for his appearance as; hereinafter provided:
+Provided, further that' nothing-in this section shall be deemed to affect the provisions of
+Section 107, sub-section (4), or Section 117, sub-section (3)
 === Section 497: When Bail May be Taken in Case of Non-Bailable Offence ===
 In non-bailable offences, grant of bail is discretionary. A person accused or suspected of such an offence may be released on bail, but not where there appear reasonable grounds for believing that he is guilty of an offence punishable with death or imprisonment for life. However, even in such serious cases, bail may be granted where the accused is a minor, woman, sick, or infirm. The section also distinguishes between “reasonable grounds” and “further inquiry,” where evidence is insufficient for conviction, allowing bail. Courts consider factors such as nature of accusation, evidence, likelihood of absconding, and possibility of tampering with evidence before granting bail.
 
 === Section 498: Power to Direct Admission to Bail or to Reduce Bail ===
-This section grants special powers to the High Court and Court of Session to admit any person to bail, regardless of the nature of the offence, and to reduce excessive bail imposed by subordinate courts or police officers. The provision acts as a supervisory safeguard to ensure fairness and prevent abuse of discretion. Courts exercising this power consider the circumstances of the case, including the nature of allegations, evidence, and financial condition of the accused. Bail should not be excessive or oppressive. The section reinforces judicial oversight in bail matters and ensures that liberty is not unjustly restricted.
+The amount of every bond
+executed under this Chapter shad be fixed with due regard to the circumstances of the,
+case, and shall, not be excessive and the High Court or Court of Session may in any case,
+whether there be. an, appeal on conviction or riot, direct that any person be admitted to
+bail, or that the bail required by a police officer or Magistrate be reduced. 
 
 === Section 498-A: Bail in Cases of Serious Offences ===
-This provision deals with offences punishable with death, life imprisonment, or imprisonment up to ten years. It provides that where an accused falls into vulnerable categories such as being under sixteen years of age, a woman, or sick or infirm, the Court may grant bail even in serious cases. The section reflects humanitarian considerations within criminal justice. The Court exercises discretion based on facts, medical condition, age, and overall circumstances. It does not create an absolute right but provides relief in deserving cases where continued detention would be unjust or unnecessary.
+Nothing in Section 497, or Section 498 shall be deemed to
+require or authorise a Court to release on bail, or to direct to be admitted to bail, any
+person who is not in custody or is not present in Court or against whom no case stands
+registered for the time being and an order for the release of a person on bail, or a direction
+that a person be admitted to bail, shall be effective only in respect of the; case that so
+stands registered against him and is specified in the order or direction. 
 
 === Section 499: Bond of Accused and Sureties ===
-Before release on bail, the accused is required to execute a bond, with or without sureties, for a sum determined by the Court or officer. The bond ensures that the accused will appear before the Court at the specified time and continue to do so until directed otherwise. Sureties act as guarantors for compliance. The amount of bond must be reasonable and not excessive. Failure to comply with bond conditions may result in forfeiture and re-arrest. This mechanism balances the right to liberty with the need to secure attendance of the accused during proceedings.
+(1) Before any person is released on bail or
+released on his own bond, a bond for such sum of money as the police officer or Court, as
+the case may be, thinks sufficient shall be executed by such person, and when he is
+released on bail, by one or more sufficient sureties conditioned that such person shall
+attend at the time and place mentioned in the bond, and shall continue so to attend until
+otherwise directed by the police officer or Court, as the case may be.
+(2) If the case so requires, the bond shall also bind the person released on bail to appear
+when called upon at the High Court, Court of Session or other Court to answer the
+charge. 
 
 === Section 500: Discharge from Custody ===
-Once the bail bond has been duly executed, the accused must be released from custody without delay. Where the accused is in jail, the Court granting bail issues a release order to the officer in charge, who is bound to comply. The section ensures immediate enforcement of bail orders and prevents unlawful detention after bail is granted. It emphasizes procedural efficiency and protection of personal liberty. Any delay in release after fulfillment of bail conditions may amount to illegal detention.
+(1) As soon as the bond has been executed, the person
+for whose appearance it has been executed .shall be released; and, when he is in jail, the
+Court admitting him to bail shall issue an order of release to the officer incharge of the jail
+and such officer on receipt of the order shall release him.
+(2) Nothing in this section, Section 496 or Section 497 shall be deemed to require the
+release of any person liable to be detained for some matter other than that in respect of
+which the bond was executed. 
 
 === Section 561-A: Saving of Inherent Powers of High Court ===
-This section preserves the inherent powers of the High Court to make orders necessary to give effect to provisions of the Code, prevent abuse of the process of Court, or secure the ends of justice. These powers are extraordinary and are exercised sparingly where no specific remedy is available under the Code. The High Court may intervene to quash proceedings, prevent miscarriage of justice, or correct jurisdictional errors. The provision acts as a constitutional safety valve, ensuring that rigid procedural rules do not result in injustice.
+ Nothing in this Code shall be deemed
+to limit or affect the inherent power of the High Court to make such orders as may be
+necessary to give effect to "any order under this Code, or to prevent abuse of the process
+of any Court or otherwise to secure the ends of justice.
