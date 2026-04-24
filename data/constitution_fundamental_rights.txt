@@ -1,50 +1,123 @@
 === Article 4: Right of Individuals to be Dealt with in Accordance with Law ===
-This Article establishes a foundational constitutional guarantee that every citizen, wherever he may be, and every other person within Pakistan, shall enjoy the protection of law and be treated strictly in accordance with law. It prohibits arbitrary actions by the State by declaring that no action detrimental to the life, liberty, body, reputation, or property of any person shall be taken except in accordance with law. It further implies that executive discretion must be exercised within legal limits and subject to judicial review. The Article embodies the rule of law, ensuring that all actions of public authorities must have lawful authority and cannot be based on personal will, caprice, or abuse of power.
+(1) To enjoy the protection of law and to be treated in accordance with law is the inalienable right of every citizen, wherever he may be, and of every other person for the time being within Pakistan.
+
+(2) In particular:
+(a) no action detrimental to the life, liberty, body, reputation or property of any person shall be taken except in accordance with law;
+(b) no person shall be prevented from or be hindered in doing that which is not prohibited by law; and
+(c) no person shall be compelled to do that which the law does not require him to do.
 
 === Article 8: Laws Inconsistent with Fundamental Rights to be Void ===
-This Article gives supremacy to Fundamental Rights by declaring that any law, or any custom or usage having the force of law, which is inconsistent with the rights conferred by this Chapter, shall be void to the extent of such inconsistency. It also restricts the State from making laws that take away or abridge these rights. Courts are empowered to strike down unconstitutional laws. However, certain laws may be protected through constitutional provisions or amendments. This Article ensures that Fundamental Rights are enforceable and not merely declaratory, forming the basis of constitutional review and protection against legislative or executive overreach.
+(1) Any law, or any custom or usage having the force of law, in so far as it is inconsistent with the rights conferred by this Chapter, shall, to the extent of such inconsistency, be void.
+
+(2) The State shall not make any law which takes away or abridges the rights so conferred and any law made in contravention of this clause shall, to the extent of such contravention, be void.
+
+(3) The provisions of this Article shall not apply to:
+(a) any law relating to members of the Armed Forces, or of the police or of such other forces as are charged with the maintenance of public order, for the purpose of ensuring the proper discharge of their duties or the maintenance of discipline among them; or
+(b) any of the:
+    (i) laws specified in the First Schedule as in force immediately before the commencing day or as amended by any of the laws specified in that Schedule;
+    (ii) other laws specified in Part I of the First Schedule;
+and no such law nor any provision thereof shall be void on the ground that such law or provision is inconsistent with, or repugnant to, any provision of this Chapter.
+
+(4) Notwithstanding anything contained in paragraph (b) of clause (3), within a period of two years from the commencing day, the appropriate Legislature shall bring the laws specified in Part II of the First Schedule into conformity with the rights conferred by this Chapter:
+Provided that the appropriate Legislature may by resolution extend the said period of two years by a period not exceeding six months.
+Explanation: If in respect of any law Majlis-e-Shoora (Parliament) is the appropriate Legislature, such resolution shall be a resolution of the National Assembly.
+
+(5) The rights conferred by this Chapter shall not be suspended except as expressly provided by the Constitution.
 
 === Article 9: Security of Person ===
-Article 9 guarantees that no person shall be deprived of life or liberty except in accordance with law. The term “life” has been interpreted broadly by courts to include quality of life, dignity, and basic human rights. “Liberty” includes freedom from unlawful detention and restraint. The Article prohibits arbitrary deprivation of life or liberty and requires lawful justification for any such action. It forms the basis for protection against extrajudicial killings, unlawful detention, and abuse of authority. Judicial interpretation has expanded its scope to cover environmental rights, fair living conditions, and other essential aspects of human existence.
+No person shall be deprived of life or liberty save in accordance with law.
 
 === Article 10: Safeguards as to Arrest and Detention ===
-This Article provides procedural safeguards to persons arrested or detained. It requires that a person must be informed, as soon as possible, of the grounds of arrest and must not be denied the right to consult and be defended by a legal practitioner of his choice. It also mandates that the arrested person be produced before a magistrate within twenty-four hours, excluding travel time, and prohibits detention beyond that period without judicial authority. In cases of preventive detention, additional safeguards and limitations apply. The Article ensures protection against arbitrary arrest and guarantees minimum procedural fairness in criminal justice.
+(1) No person who is arrested shall be detained in custody without being informed, as soon as may be, of the grounds for such arrest, nor shall he be denied the right to consult and be defended by a legal practitioner of his choice.
+
+(2) Every person who is arrested and detained in custody shall be produced before a magistrate within a period of twenty-four hours of such arrest, excluding the time necessary for the journey from the place of arrest to the court of the nearest magistrate, and no such person shall be detained in custody beyond the said period without the authority of a magistrate.
+
+(3) Nothing in clauses (1) and (2) shall apply to any person who is arrested or detained under any law providing for preventive detention.
+
+(4) No law providing for preventive detention shall be made except to deal with persons acting in a manner prejudicial to the integrity, security or defence of Pakistan or any part thereof, or external affairs of Pakistan, or public order, or the maintenance of supplies or services, and no such law shall authorise the detention of a person for a period exceeding three months unless the appropriate Review Board has, after affording him an opportunity of being heard in person, reviewed his case and reported, before the expiration of the said period, that there is, in its opinion, sufficient cause for such detention, and, if the detention is continued after the said period of three months, unless the appropriate Review Board has reviewed his case and reported, before the expiration of each period of three months, that there is, in its opinion, sufficient cause for such detention.
+Explanation-I: In this Article, "the appropriate Review Board" means:
+(i) in the case of a person detained under a Federal law, a Board appointed by the Chief Justice of Supreme Court of Pakistan and consisting of a Chairman and two other persons, each of whom is or has been a Judge of the Supreme Court or a High Court; and
+(ii) in the case of a Person detained under a Provincial law, a Board appointed by the Chief Justice of the High Court concerned and consisting of a Chairman and two other persons, each of whom is or has been a Judge of a High Court.
+Explanation-II: The opinion of a Review Board shall be expressed in terms of the views of the majority of its members.
+
+(5) When any person is detained in pursuance of an order made under any law providing for preventive detention, the authority making the order shall, within fifteen days from such detention, communicate to such person the grounds on which the order has been made, and shall afford him the earliest opportunity of making a representation against the order:
+Provided that the authority making any such order may refuse to disclose facts which such authority considers it to be against the public interest to disclose.
+
+(6) The authority making the order shall furnish to the appropriate Review Board all documents relevant to the case unless a certificate, signed by a Secretary to the Government concerned, to the effect that it is not in the public interest to furnish any documents, is produced.
+
+(7) Within a period of twenty-four months commencing on the day of his first detention in pursuance of an order made under a law providing for preventive detention, no person shall be detained in pursuance of any such order for more than a total period of eight months in the case of a person detained for acting in a manner prejudicial to public order and twelve months in any other case:
+Provided that this clause shall not apply to any person who is employed by, or works for, or acts on instructions received from, the enemy or who is acting or attempting to act in a manner prejudicial to the integrity, security or defence of Pakistan or any part thereof or who commits or attempts to commit any act which amounts to an anti-national activity as defined in a Federal law or is a member of any association which has for its objects, or which indulges in, any such anti-national activity.
+
+(8) The appropriate Review Board shall determine the place of detention of the person detained and fix a reasonable subsistence allowance for his family.
+
+(9) Nothing in this Article shall apply to any person who for the time being is an enemy alien.
 
 === Article 10-A: Right to Fair Trial ===
-This Article guarantees that for determination of civil rights and obligations or in any criminal charge, a person is entitled to a fair trial and due process. It constitutionalizes principles of natural justice, including impartial tribunal, right to be heard, transparency, and reasoned decisions. It applies to all judicial and quasi-judicial proceedings. Courts have interpreted it broadly to include access to justice, legal representation, and procedural fairness. Any law or action violating fair trial standards may be challenged as unconstitutional. It strengthens rule of law by ensuring justice is not only done but seen to be done.
+For the determination of his civil rights and obligations or in any criminal charge against him a person shall be entitled to a fair trial and due process.
 
 === Article 14: Inviolability of Dignity of Man ===
-Article 14 declares that the dignity of man and, subject to law, the privacy of home shall be inviolable. It explicitly prohibits torture for extracting evidence. The concept of dignity includes respect for physical and mental integrity, honor, and personal autonomy. Privacy of home protects individuals from unlawful intrusion by the State or others. Courts have expanded this right to include protection against degrading treatment and unlawful surveillance. The Article acts as a safeguard against abuse of power and ensures humane treatment of individuals in all circumstances, including during investigation and detention.
+(1) The dignity of man, and, subject to law, the privacy of home, shall be inviolable.
+
+(2) No person shall be subjected to torture for the purpose of extracting evidence.
 
 === Article 15: Freedom of Movement ===
-This Article grants every citizen the right to remain in, enter, move freely throughout Pakistan, and reside or settle in any part thereof. However, this right is subject to reasonable restrictions imposed by law in the public interest, such as security, public health, or order. Restrictions must not be arbitrary and should be proportionate. The Article ensures mobility and unity within the State, enabling citizens to live and work anywhere in the country. It also protects against unlawful exile or restriction of movement without legal authority.
+Every citizen shall have the right to remain in, and, subject to any reasonable restriction imposed by law in the public interest, enter and move freely throughout Pakistan and to reside and settle in any part thereof.
 
 === Article 16: Freedom of Assembly ===
-Article 16 guarantees the right of citizens to assemble peacefully and without arms. This right is essential for democratic participation, protest, and expression of collective views. However, it is subject to reasonable restrictions imposed by law in the interest of public order. Authorities may regulate assemblies to prevent violence, disorder, or threats to security, but cannot arbitrarily prohibit peaceful gatherings. The Article balances individual freedom with societal stability, ensuring that public demonstrations remain lawful and orderly.
+Every citizen shall have the right to assemble peacefully and without arms, subject to any reasonable restrictions imposed by law in the interest of public order.
 
 === Article 17: Freedom of Association ===
-This Article provides that every citizen has the right to form associations or unions, including political parties. It is subject to reasonable restrictions in the interest of sovereignty or integrity of Pakistan, public order, or morality. The Article also ensures that political parties operate within legal frameworks. It promotes collective organization for social, economic, and political purposes. Courts have emphasized that restrictions must be justified and not excessive. This right is fundamental to democratic governance and civil society development.
+(1) Every citizen shall have the right to form associations or unions, subject to any reasonable restrictions imposed by law in the interest of sovereignty or integrity of Pakistan, public order or morality.
+
+(2) Every citizen, not being in the service of Pakistan, shall have the right to form or be a member of a political party, subject to any reasonable restrictions imposed by law in the interest of the sovereignty or integrity of Pakistan and such law shall provide that where the Federal Government declares that any political party has been formed or is operating in a manner prejudicial to the sovereignty or integrity of Pakistan, the Federal Government shall, within fifteen days of such declaration, refer the matter to the Federal Constitutional Court of Pakistan whose decision on such reference shall be final.
+
+(3) Every political party shall account for the source of its funds in accordance with law.
 
 === Article 18: Freedom of Trade, Business or Profession ===
-Article 18 guarantees every citizen the right to enter upon any lawful profession or occupation and to conduct any lawful trade or business. This right is subject to qualifications prescribed by law, including licensing, regulation, and professional standards. The State may regulate economic activities in the public interest, but cannot impose arbitrary restrictions. The Article ensures economic freedom while allowing reasonable control to maintain standards, protect consumers, and ensure fair competition.
+Subject to such qualifications, if any, as may be prescribed by law, every citizen shall have the right to enter upon any lawful profession or occupation, and to conduct any lawful trade or business:
+Provided that nothing in this Article shall prevent:
+(a) the regulation of any trade or profession by a licensing system; or
+(b) the regulation of trade, commerce or industry in the interest of free competition therein; or
+(c) the carrying on, by the Federal Government or a Provincial Government, or by a corporation controlled by any such Government, of any trade, business, industry or service, to the exclusion, complete or partial, of other persons.
 
 === Article 19: Freedom of Speech and Expression ===
-This Article guarantees freedom of speech and expression, as well as freedom of the press. However, it is subject to reasonable restrictions imposed by law in the interest of the glory of Islam, integrity, security, or defence of Pakistan, public order, decency, or morality. The right includes expression through words, writing, or media. Courts have emphasized that restrictions must be narrowly tailored. This Article forms the backbone of democratic discourse, enabling criticism, debate, and dissemination of ideas while balancing societal interests.
+Every citizen shall have the right to freedom of speech and expression, and there shall be freedom of the press, subject to any reasonable restrictions imposed by law in the interest of the glory of Islam or the integrity, security or defence of Pakistan or any part thereof, friendly relations with foreign States, public order, decency or morality, or in relation to contempt of court, commission of or incitement to an offence.
 
 === Article 19-A: Right to Information ===
-Article 19-A grants citizens the right to access information in matters of public importance. It promotes transparency and accountability in governance. The right is subject to regulation and reasonable restrictions, such as national security or privacy concerns. It enables citizens to scrutinize public institutions and participate effectively in democratic processes. Laws like right to information statutes operationalize this Article. Courts have recognized it as essential for informed decision-making and prevention of corruption.
+Every citizen shall have the right to have access to information in all matters of public importance subject to regulation and reasonable restrictions imposed by law.
 
 === Article 20: Freedom to Profess Religion ===
-This Article guarantees every citizen the right to profess, practice, and propagate his religion, subject to law, public order, and morality. It also grants religious denominations the right to establish, maintain, and manage their institutions. The State must ensure religious tolerance and non-discrimination. However, practices that disturb public order or violate law may be regulated. The Article protects both individual and collective religious freedom within a constitutional framework.
+Subject to law, public order and morality:
+(a) every citizen shall have the right to profess, practice and propagate his religion; and
+(b) every religious denomination and every sect thereof shall have the right to establish, maintain and manage its religious institutions.
 
 === Article 23: Provision as to Property ===
-Article 23 provides that every citizen has the right to acquire, hold, and dispose of property in any part of Pakistan, subject to the Constitution and reasonable restrictions imposed by law in the public interest. The State may regulate property ownership for purposes such as planning, taxation, or land reforms. However, such regulation must be lawful and not arbitrary. The Article recognizes property as an important economic right while allowing necessary limitations.
+Every citizen shall have the right to acquire, hold and dispose of property in any part of Pakistan, subject to the Constitution and any reasonable restrictions imposed by law in the interest of public interest.
 
 === Article 24: Protection of Property Rights ===
-This Article protects individuals from compulsory deprivation of property except in accordance with law. It generally requires compensation where property is acquired by the State for public purposes. The law must specify the authority, purpose, and manner of acquisition. Arbitrary confiscation is prohibited. The Article ensures fairness in state acquisition and balances public needs with private rights. Courts scrutinize such actions to prevent misuse of power.
+(1) No person shall be compulsorily deprived of his property save in accordance with law.
+
+(2) No property shall be compulsorily acquired or taken possession of save for a public purpose, and save by the authority of law which provides for compensation therefore and either fixes the amount of compensation or specifies the principles on and the manner in which compensation is to be determined and given.
+
+(3) Nothing in this Article shall affect the validity of:
+(a) any law permitting the compulsory acquisition or taking possession of any property for preventing danger to life, property or public health; or
+(b) any law permitting the taking over of any property which has been acquired by, or come into the possession of, any person by any unfair means, or in any manner, contrary to law; or
+(c) any law relating to the acquisition, administration or disposal of any property which is or is deemed to be enemy property or evacuee property under any law (not being property which has ceased to be evacuee property under any law); or
+(d) any law providing for the taking over of the management of any property by the State for a limited period, either in the public interest or in order to secure the proper management of the property, or for the benefit of its owner; or
+(e) any law providing for the acquisition of any class of property for the purpose of:
+    (i) providing education and medical aid to all or any specified class of citizens; or
+    (ii) providing housing and public facilities and services such as roads, water supply, sewerage, gas and electric power to all or any specified class of citizens; or
+    (iii) providing maintenance to those who, on account of unemployment, sickness, infirmity or old age, are unable to maintain themselves; or
+(f) any existing law or any law made in pursuance of Article 253.
+
+(4) The adequacy or otherwise of any compensation provided for by any such law as is referred to in this Article, or determined in pursuance thereof, shall not be called in question in any court.
 
 === Article 25: Equality of Citizens ===
-Article 25 declares that all citizens are equal before law and entitled to equal protection of law. It prohibits discrimination on the basis of sex alone but allows reasonable classification and affirmative action for disadvantaged groups. The principle ensures that laws apply equally and fairly to all individuals. Courts examine whether classifications are reasonable and have a rational nexus to the objective. This Article forms the cornerstone of equality and non-discrimination in constitutional law.
+(1) All citizens are equal before law and are entitled to equal protection of law.
+
+(2) There shall be no discrimination on the basis of sex.
+
+(3) Nothing in this Article shall prevent the State from making any special provision for the protection of women and children.
 
 === Article 25-A: Right to Education ===
-Article 25-A mandates the State to provide free and compulsory education to all children aged five to sixteen years in such manner as determined by law. It imposes a positive obligation on the State to ensure access to education. The Article recognizes education as a fundamental right essential for personal development and societal progress. Implementation depends on legislative and administrative measures, including infrastructure, funding, and policy frameworks.
+The State shall provide free and compulsory education to all children of the age of five to sixteen years in such manner as may be determined by law.
