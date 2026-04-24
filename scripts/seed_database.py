@@ -1,10 +1,16 @@
 import os
+import sys
 import asyncio
 import argparse
+from pathlib import Path
 from dotenv import load_dotenv
 from rich.console import Console
 from rich.table import Table
 from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn, TimeElapsedColumn
+
+# Add project root to sys.path
+root_path = Path(__file__).parent.parent
+sys.path.append(str(root_path))
 
 from ingestion.embedder import DocumentEmbedder
 from ingestion.pipeline import IngestionPipeline
