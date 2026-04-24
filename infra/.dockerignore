@@ -1,0 +1,18 @@
+# Ignore local virtual environments to prevent build bloat
+venv/
+.venv/
+env/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore local database and grafana data folders
+postgres_data/
+grafana_data/
+
+# Ignore git history
+.git/
+.github/

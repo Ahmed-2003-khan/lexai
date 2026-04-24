@@ -3,6 +3,7 @@ FROM python:3.11-slim as builder
 
 WORKDIR /build
 
+# Build dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     libpq-dev \
@@ -10,8 +11,17 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 COPY pyproject.toml .
 
-RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir --prefix=/install .
+RUN python -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+
+# STEP 1: Pehle sirf Pip upgrade karein
+RUN pip install --no-cache-dir --upgrade pip
+
+# STEP 2: Light-weight CPU versions install karein (Sab se bari bachat yahan hai)
+RUN pip install --no-cache-dir torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+
+# STEP 3: Baqi sari dependencies install karein
+RUN pip install --no-cache-dir .
 
 # Stage 2: Runtime
 FROM python:3.11-slim as runtime
@@ -19,17 +29,16 @@ FROM python:3.11-slim as runtime
 WORKDIR /app
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl \
     libpq5 \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
-COPY --from=builder /install /usr/local
+# Builder stage se sirf installed packages copy karein
+COPY --from=builder /opt/venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+COPY api/ ./api/
 
-RUN useradd -m -U -s /bin/bash lexai
-RUN chown -R lexai:lexai /app
-
-COPY --chown=lexai:lexai api/ ./api/
-
+RUN useradd -m lexai && chown -R lexai /app
 USER lexai
 
 EXPOSE 8000
