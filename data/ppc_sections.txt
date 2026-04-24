@@ -1,60 +1,168 @@
 
 === Section 299: Definitions ===
-In this Chapter relating to offences affecting the human body, various technical terms are defined to clarify liability and punishment. An “adult” refers to a person who has attained eighteen years of age. “Arsh” means the pre-determined compensation specified in law for certain kinds of hurt, payable to the victim or heirs. “Daman” refers to compensation assessed by the Court in cases where arsh is not applicable. “Diyat” is the specified financial compensation payable to the legal heirs of a deceased victim under Section 323. The term “qatl” denotes causing the death of a person by any act. “Qisas” refers to retributive punishment, meaning inflicting similar harm on the offender as caused to the victim, including death in cases of intentional killing. These definitions govern interpretation of subsequent provisions.
+In this Chapter, unless there is anything repugnant in the subject or context:
+(a) "adult" means a person who has attained the age of eighteen years;
+(b) "arsh" means the compensation specified in this Chapter to be paid to the victim or his heirs under this Chapter;
+(c) "authorised medical officer" means a medical officer or a Medical board, howsoever designated, authorised by the Provincial Government;
+(d) "daman" means the compensation determined by the Court to be paid by the offender to the victim for causing hurt not liable to arsh;
+(e) "diyat" means the compensation specified in Section 323 payable to the heirs of the victim;
+(ee) "fasad-fil-arz" includes the past conduct of the offender or whether he has any previous conviction or the brutal or shocking manner in which the offence has been committed which is outrageous to the public conscience or if the offender is considered a potential danger to the community or if the offence has been committed in the name or on the pretext of honour;
+(f) "Government" means the Provincial Government;
+(g) "ikrah-e-tam" means putting any person, his spouse or any of his blood relations within the prohibited degree of marriage in fear of instant death or instant, permanent impairing of any organ of the body or instant fear of being subjected to sodomy or zina-bil-jabr;
+(h) "ikrah-e-naqis" means any form of duress which does not amount to ikrah-i-tam;
+(i) "minor" means a person who is not an adult;
+(ii) "offence committed in the name or on the pretext of honour" means an offence committed in the name or on the pretext of karo kari, siyah kari or similar other customs or practices;
+(j) "qatl" means causing death of a person;
+(k) "qisas" means punishment by causing similar hurt at the same part of the body of the convict as he has caused to the victim or by causing his death if he has committed qatl-i-amd in exercise of the right of the victim or a Wali;
+(l) "ta'zir" means punishment other than qisas, diyat, arsh, or daman; and
+(m) "wali" means a person entitled to claim qisas.
 
 === Section 300: Qatl-i-Amd ===
-Qatl-i-amd refers to intentional homicide. A person commits this offence when he causes the death of another with the intention of causing death, or with the intention of causing bodily injury that is likely to result in death in the ordinary course of nature. It also includes acts done with knowledge that they are so imminently dangerous that death will probably result. The section emphasizes both intention and knowledge as mental elements. The nature of the act, surrounding circumstances, and probability of death are all relevant factors in determining liability under this section.
+Whoever, with the intention of causing death or with the intention of causing bodily injury to a person, by doing an act which in the ordinary course of nature is likely to cause death, or with the knowledge that his act is so imminently dangerous that it must in all probability cause death, causes the death of such person, is said to commit qatl-e-amd.
 
 === Section 302: Punishment of Qatl-i-Amd ===
-Punishment for qatl-i-amd depends on proof and applicability of Islamic principles. The offender may be punished with death as qisas where legal requirements are fulfilled. Alternatively, where strict proof for qisas is not available, the Court may award death or life imprisonment as ta’zir based on facts and circumstances. In cases where qisas is not applicable according to Islamic injunctions, the offender may be punished with imprisonment up to twenty-five years. The section reflects a dual system combining Islamic punishments and discretionary judicial sentencing.
+Whoever commits qatl-e-amd shall, subject to the provisions of this Chapter be:
+(a) punished with death as qisas;
+(b) punished with death or imprisonment for life as ta'zir having regard to the facts and circumstances of the case, if the proof in either of the forms specified in Section 304 is not available; or
+(c) punished with imprisonment of either description for a term which may extend to twenty-five years, where according to the injunctions of Islam the punishment of qisas is not applicable:
+Provided that nothing in clause (c) shall apply where the principle of fasad-fil-arz is attracted and in such cases only clause (a) or clause (b) shall apply.
 
 === Section 304: Proof of Qatl-i-Amd Liable to Qisas ===
-Proof for imposing qisas must meet strict evidentiary standards. It may be established through a voluntary and truthful confession made before a competent Court, or through evidence fulfilling requirements under Qanun-e-Shahadat, particularly Article 17 regarding witnesses. The burden is high because qisas involves irreversible punishment. Courts carefully scrutinize credibility, voluntariness of confession, and reliability of witnesses before awarding such punishment.
+(1) Proof of qatl-i-amd shall be in any of the following forms, namely: -
+(a) the accused makes before a Court competent to try the offence a voluntary and true confession of the commission of the offence; or
+(b) by the evidence as provided in Article 17 of the Qanun-e-Shahadat, 1984 (P.O. No. 10 of 1984).
+(2) The provisions of sub-section (1) shall, mutatis, mutandis, apply to a hurt liable to qisas.
 
 === Section 319: Punishment for Qatl-i-Khata ===
-Qatl-i-khata refers to causing death without intention, typically by mistake. The primary punishment is payment of diyat to the heirs of the deceased. However, if the act involves rashness or negligence (excluding driving cases covered separately), the offender may also face imprisonment up to five years as ta’zir. The section distinguishes between pure accident and negligent conduct, imposing additional liability where carelessness contributes to death.
+Whoever commits qatl-i-khata shall be liable to diyat:
+Provided that, where qatl-i-khata is committed by a rash or negligent act, other than rash or negligent driving, the offender may, in addition to diyat, also be punished with imprisonment of either description for a term which may extend to five years as ta'zir.
 
 === Section 320: Punishment for Qatl-i-Khata by Rash or Negligent Driving ===
-Where death is caused specifically through rash or negligent driving, the offender is liable to diyat and may also face imprisonment up to ten years. Courts consider factors such as speed, traffic conditions, and degree of negligence. This provision reflects the seriousness of road-related fatalities and imposes stricter punishment compared to general negligence cases.
+Whoever commits qatl-ikhata by rash or negligent driving shall, having regard to the facts and circumstances the case, in addition to diyat, be punished with imprisonment of either description for a term which may extend to ten years.
 
 === Section 351: Assault ===
-Assault is committed when a person makes a gesture or preparation intending or knowing it is likely to cause another person to apprehend the use of criminal force. Actual physical contact is not required. The essence lies in creating fear or anticipation of harm. The intention or knowledge of likely fear is crucial. Even raising a weapon or threatening gesture may constitute assault if it causes reasonable apprehension.
+Whoever makes any gesture, or any preparation intending or knowing it to be likely that such gesture or preparation will cause any person present to apprehend that he who makes that gesture or preparation is about to use criminal force to that person, is said to commit an assault.
+Explanation: Mere words do not amount to an assault. But the words which a person uses may give to his gesture or preparation such a meaning as may make those gestures or preparations amount to an assault.
+Illustrations:
+(a) A shakes his fist at Z, intending or knowing it to be likely that he may thereby cause Z to believe that A is about to strike Z, A has committed an assault.
+(b) A begins to unloose the muzzle of a ferocious dog intending, or knowing it to be likely that he may thereby cause Z to believe that he is about to cause the dog to attack Z. A has committed an assault upon Z.
+(c) A takes up a stick, saying to Z, "I will give you a beating." Here, though the words used by A could in no case amount to an assault, and though the mere gesture accompanied by any other circumstances might not amount to an assault, the gesture explained by the words may amount to an assault.
 
 === Section 378: Theft ===
-Theft involves dishonest intention to take movable property out of another person’s possession without consent. The offence is complete once the property is moved for that purpose. Possession, lack of consent, and dishonest intention are essential elements. Even slight movement of property qualifies as completion of the offence. The section protects ownership and possession rights against unlawful interference.
+Whoever, intending to take dishonestly any movable property out of the possession of any person without that person's consent, moves that property in order to such taking, is said to commit theft.
+Explanation 1: A thing so long as it is attached to the earth, not being movable property, is not the subject of theft; but it becomes capable of being the subject of theft as soon as it is severed from the earth.
+Explanation 2: A moving effected by the same act which effects the severance may be a theft.
+Explanation 3: A person is said to cause a thing to move by removing an obstacle, which prevented it from moving, or by separating it from any other thing, as well as by actually moving it.
+Explanation 4: A person, who by any means causes an animal to move, is said to move that animal, and to move everything which, in consequence of the motion so caused, is moved by that animal.
+Explanation 5: The consent mentioned in the definition may be express or implied, and may be given either by the person in possession, or by any person having for that purpose authority either express or implied.
 
 === Section 379: Punishment for Theft ===
-Whoever commits theft is punishable with imprisonment up to three years, or fine, or both. The Court considers factors such as value of property, circumstances, and prior conduct of the offender while determining punishment. The provision provides flexibility in sentencing depending on severity.
+Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.
 
 === Section 380: Theft in Dwelling House ===
-Theft committed in a dwelling house or place used for custody of property is treated more seriously. The punishment may extend up to seven years imprisonment along with fine. The law enhances punishment due to breach of security and trust associated with private premises.
+Whoever commits theft in any building, tent or vessel, which building, tent or vessel is used as a human dwelling, or used for the custody of property shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.
+
+=== Section 381: Theft by Clerk or Servant of Property in Possession of Master ===
+Whoever being a clerk or servant, or being employed in the capacity of a clerk or servant, commits theft in respect of any property in the possession of his master or employer, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.
+
 
 === Section 383: Extortion ===
-Extortion occurs when a person intentionally puts another in fear of injury and thereby dishonestly induces delivery of property or valuable security. The key elements include fear, inducement, and dishonest intention. The injury may be physical, reputational, or economic. Consent obtained under fear is not considered free.
+Whoever intentionally puts any person in fear of any injury to that person, or to any other, and thereby dishonestly induces the person so put in fear to deliver to any person any property or valuable security or anything signed or sealed which may be converted into a valuable security, commits "extortion".
+Illustrations:
+(a) A threatens to publish a defamatory libel concerning Z unless Z gives him money. He thus induces Z to give him money. A has committed extortion.
+(b) A threatens Z that he will keep Z's child in wrongful confinement, unless Z will sign and deliver to A a promissory note binding Z to pay certain monies to A. Z signs and delivers the note. A has committed extortion.
+(c) A threatens to send club-men to plough up Z's field unless Z will sign and deliver to B a bond binding Z under a penalty to deliver certain produce to B, and thereby induces Z to sign and deliver the bond. A has committed extortion.
+(d) A, by putting Z in fear of grievous hurt, dishonestly induces Z to sign or seal a blank paper and deliver it to A. Z signs and delivers the paper to A. Here, as the paper so signed may be converted into a valuable security. A has committed extortion.
 
 === Section 390: Robbery ===
-Robbery is an aggravated form of theft or extortion. Theft becomes robbery when violence, threat of instant harm, or wrongful restraint is used during commission or escape. Extortion becomes robbery when fear of immediate harm is used in the presence of the victim. The defining feature is immediacy and use of force.
+In all robbery there is either theft or extortion.
+When theft is robbery: Theft is "robbery" if, in order to the committing of the theft, or in committing the theft, or in carrying away or attempting to carry away property obtained by the theft, the offender, for that end, voluntarily causes or attempts to cause to any person death or hurt or wrongful restraint, or fear of instant death or of instant hurt, or of instant wrongful restraint.
+When extortion is robbery: Extortion is "robbery" if the offender, at the time of committing the extortion, is in the presence of the person put in fear, and commits the extortion by putting that person in fear of instant death, of instant hurt, or of instant wrongful restraint to that person, or to some other person, and, by so putting in fear, induces the person so put in fear then and there to deliver up the thing extorted.
+Explanation: The offender is said to be present if he is sufficiently near to put the other person in fear of instant death, of instant hurt, or of instant wrongful restraint.
+Illustrations:
+(a) A holds Z down, and dishonestly takes Z's money and jewels from Z's clothes, without Z's consent. Here A has committed theft, and, in order to the committing of that theft, has voluntarily caused wrongful restraint to Z. A has therefore committed robbery.
+(b) A meets Z on the high road, shows a pistol, and demands Z's purse. Z, in consequence, surrenders his purse. Here A has extorted the purse from Z by putting him in fear of instant hurt, and being at the time of committing the extortion in his presence. A has therefore committed robbery.
+(c) A meets Z and Z's child on the high road. A takes the child, and threatens to fling it down a precipice, unless Z delivers his purse. Z, in consequence, delivers his purse. Here A has extorted the purse from Z, by causing Z to be in fear of instant hurt to the child who is there present. A has therefore committed robbery on Z.
+(d) A obtains property from Z by saying: "Your child is in the hands of my gang, and will be put to death unless you send us ten thousand rupees." This is extortion, and punishable as such: but it is not robbery, unless Z is put in fear of the instant death of his child.
 
 === Section 391: Dacoity ===
-Dacoity is committed when five or more persons jointly commit or attempt robbery. All participants, including those aiding, are equally liable. The section emphasizes collective criminal activity and increases seriousness due to organized nature of the offence.
+When five or more persons conjointly commit or attempt to commit a robbery, or where the whole number of persons conjointly committing or attempting to commit a robbery, and persons present and aiding such commission or attempt, amount to five or more, every person so committing, attempting or aiding, is said to commit "dacoity".
+
+=== Section 392: Punishment for Robbery ===
+Whoever commits robbery shall be punished with rigorous imprisonment for a term which shall not be less than three years nor more than ten years, and shall also be liable to fine; and, if the robbery be committed on the highway the imprisonment may be extended to fourteen years.
+
+=== Section 395: Punishment for Dacoity ===
+Whoever commits dacoity shall be punished with imprisonment for life, or with rigorous imprisonment for a term which shall not be less than four years nor more than ten years and shall also be liable to fine.
+
+=== Section 403: Dishonest Misappropriation of Property ===
+Whoever dishonestly misappropriates or converts to his own use any movable property, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.
+Illustrations:
+(a) A takes property belonging to Z out of Z's possession in good faith, believing, at the time when he takes it, that the property belongs to himself. A is not guilty of theft; but if A, after discovering his mistake, dishonestly appropriates the property to his own use, he is guilty of an offence under this section.
+(b) A, being on friendly terms with Z, goes into Z's library in Z's absence, and takes away a book without Z's express consent. Here, if A was under the impression that he had Z's implied consent to take the book for the purpose of reading it, A has not committed theft. But, if A afterwards sells the book for his own benefit, he is guilty of an offence under this section.
+(c) A and B being joint owners of a horse, A takes the horse out of B's possession, intending to use it. Here, as A has a right to use the horse, he does not dishonestly misappropriate it. But, if A sells the horse and appropriates the whole proceeds to his own use, he is guilty of an offence under this section.
+Explanation 1: A dishonest misappropriation for a time only is a misappropriation within the meaning of this section.
+Illustration: A finds a Government promissory note belonging to Z, bearing a blank endorsement. A, knowing that the note belongs to Z, pledges it with a banker as a security for a loan, intending at a future time to redeem it and restore it to Z. A has committed an offence under this section.
+Explanation 2: A person who finds property not in the possession of any person, and takes such property for the purpose of protecting it for, or of restoring it to, the owner, does not take or misappropriate it dishonestly, and is not guilty of an offence; but he is guilty of the offence above defined, if he appropriates it to his own use, when he knows or has the means of discovering the owner, or before he has used reasonable means to discover and give notice to the owner and has kept the property a reasonable time to enable the owner to claim it.
+What are reasonable means, or what is a reasonable time in such a case, is a question of fact.
+It is not necessary that the finder should know who is the owner of the property, or that any particular person is the owner of it: it is sufficient if, at the time of appropriating it, he does not believe it to be his own property, or in good faith believe that the real owner cannot be found.
+Illustrations:
+(a) A finds a rupee on the high-road, not knowing to whom the rupee belongs. A takes up the rupee. Here A has not committed the offence defined in this section.
+(b) A finds a letter on the road, containing a bank note. From the direction and contents of the letter he learns to whom the note belongs. He appropriates the note. He is guilty of an offence under this section.
+(c) A finds a cheque payable to bearer. He can form no conjecture as to the person who has lost the cheque. But the name of the person, who drew the cheque, appears. A knows that this person can direct him to the person in whose favour the cheque was drawn. A appropriates the cheque without attempting to discover the owner. He is guilty of an offence under this section.
+(d) A sees Z drop his purse with money in it. A picks up the purse with the intention of restoring it to Z, but afterwards appropriates it to his own use. A has committed an offence under this section.
+
+=== Section 405: Criminal Breach of Trust ===
+Whoever, being in any manner entrusted with property, or with any dominion over property, dishonestly misappropriates or converts to his own use that property, or dishonestly uses or disposes of that property in violation of any direction of law prescribing the mode in which such trust is to be discharged, or of any legal contract, express or implied, which he has made touching the discharge of such trust, or wilfully suffers any other person so to do, commits "criminal breach of trust".
+Illustrations:
+(a) A, being executor to the will of a deceased person, dishonestly disobeys the law which directs him to divide the effects according to the will, and appropriates them to his own use. A has committed criminal breach of trust.
+(b) A is a warehouse-keeper. Z, going on a journey, entrusts his furniture to A, under a contract that it shall be returned on payment of a stipulated sum for warehouse-room. A dishonestly sells the goods. A has committed criminal breach of trust.
+(c) A, residing in Dacca, is agent for Z, residing at Calcutta. There is an express or implied contract between A and Z, that all monies remitted by Z to A shall be invested by A, according to Z's direction. Z remits a lakh of rupees to A, with directions to A to invest the same in Company's paper. A dishonestly disobeys the directions and employs the money in his own business. A has committed criminal breach of trust.
+(d) But if A, in the last illustration, not dishonestly but in good faith, believing that it will be more for Z's advantage to hold shares in the Bank of Bengal, disobeys Z's directions, and buys shares in the Bank of Bengal, for Z instead of buying Company's paper, here, though Z should suffer loss, and should be entitled to bring a civil action against A, on account of that breach, A, not having acted dishonestly, has not committed criminal breach of trust.
+(e) A, a revenue-officer, is entrusted with public money and is either directed by law, or bound by a contract, express or implied, with the Government, to pay into a certain treasury all the public money which he holds. A dishonestly appropriates the money. A has committed criminal breach of trust.
+(f) A, a carrier, is entrusted by Z with property to be carried by land or by water. A dishonestly misappropriates the property. A has committed criminal breach of trust.
 
 === Section 406: Punishment for Criminal Breach of Trust ===
-Criminal breach of trust occurs when a person entrusted with property dishonestly misappropriates or converts it. Punishment may extend to seven years imprisonment, or fine, or both. Trust and fiduciary responsibility are central elements, and violation attracts criminal liability.
+Whoever, commits criminal breach of trust shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.
 
 === Section 415: Cheating ===
-Cheating involves deception leading to dishonest or fraudulent inducement. The victim is caused to deliver property or act in a way causing harm to body, mind, reputation, or property. Intention at the time of inducement is crucial for establishing the offence.
+Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property, or intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation or property, is said to "cheat".
+Explanation: A dishonest concealment of facts is a deception within the meaning of this section.
+Illustrations:
+(a) A, by falsely pretending to be in the Civil Service, intentionally deceives Z and thus dishonestly induces Z to let him have on credit goods for which he does not mean to pay, A cheats.
+(b) A, by putting a counterfeit mark on an article, intentionally deceives Z, into a belief that this article was made by a certain celebrated manufacturer, and thus dishonestly induces Z to buy and pay for the article. A cheats.
+(c) A, by exhibiting to Z a false sample of an article, Intentionally deceives Z into believing that the article corresponds with the sample, and thereby dishonestly induces Z to buy and pay for the article. A cheats.
+(d) A, by tendering in payment for an article a bill w a house with which A keeps no money and by which A expects that the bill will be dishonoured, intentionally deceives Z and thereby dishonestly induces Z to deliver the article, intending not to pay for ft. A cheats.
+(e) A, by pledging as diamonds articles which ft knows are not diamonds, intentionally deceives Z, and thereby dishonestly induces Z to lend money, A cheats.
+(f) A, intentionally deceives Z, into a belief that A means to repay any money that 2 may lend to him and thereby dishonestly induces Z to lend him money; A not intending to repay it. A cheats.
+(g) A, intentionally deceives Z into a belief that A means to deliver to Z a certain quantity of indigo plant which he does not intend to deliver, and thereby dishonestly induces Z to advance money upon the faith of such delivery. A cheats; but if A, at the time of obtaining the money, intends to deliver the indigo plant, and afterwards breaks his contract and does not deliver it, he does not cheat, but is liable only to a civil action for breach of contract.
+(h) A intentionally deceives Z into a belief that A has performed A's part of a contract made with Z, which he has not performed and thereby dishonestly induces Z to pay money. A cheats.
+(i) A sells and conveys an estate to S. A, knowing that in consequence of such sale he has no right to the property, sells or mortgages the same to Z. without disclosing the fact of the previous sale and conveyance to B, and receives the purchase or mortgage money from Z. A cheats.
 
 === Section 416: Cheating by Personation ===
-This offence occurs when a person cheats by pretending to be someone else or by substituting identity. It includes false representation of identity to deceive others. The deception must be intentional and aimed at wrongful gain.
+A person is said to "cheat by personation" if he cheats by pretending to be some other person, or by knowingly substituting one person for another, or representing that he or any other person is a person other than he or such other person really is.
+Explanation: The offence is committed whether the individual personated is a real or imaginary person.
+Illustrations:
+(a) A cheats by pretending to be a certain rich banker of the same name, A cheats by personation.
+(b) A cheats by pretending to be 8, a person who is deceased. A cheats by personation.
 
 === Section 420: Cheating and Dishonestly Inducing Delivery of Property ===
-This is a more serious form of cheating involving delivery of property or alteration/destruction of valuable security. Punishment may extend to seven years imprisonment and fine. It requires proof of dishonest intention at the outset and actual inducement leading to loss.
+Whoever cheats and thereby dishonestly induces the person deceived to deliver any property to any person, or to make, alter or destroy the whole or any part of a valuable security, or anything which is signed or sealed, and which is capable of being converted into a valuable security, shall be punished with imprisonment, of either description for a term which may extend to seven years, and shall also be liable to fine.
 
 === Section 441: Criminal Trespass ===
-Criminal trespass occurs when a person enters property with intent to commit an offence or to intimidate, insult, or annoy the possessor. Even lawful entry followed by unlawful intent qualifies. The focus is on intention and unauthorized interference with possession.
+Whoever enters into or upon property in the possession of another with intent to commit an offence or to intimidate, insult or annoy any person in possession of such property, or, having lawfully entered into or upon such property, unlawfully remains there with intent thereby to intimidate, insult or annoy any such person, or with intent to commit an offence, is said to commit "criminal trespass".
 
 === Section 499: Defamation ===
-Defamation involves making or publishing imputations harming a person’s reputation. It may be through words, signs, or visible representations. Intention or knowledge of likely harm is required. The law also provides exceptions such as truth for public good and fair comment.
+Whoever by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes any imputation concerning any person intending to harm, or knowing or having reason to believe that such imputation will harm, the reputation of such person, is said except in the cases hereinafter excepted, to defame that person.
+Explanation 1: It may amount to defamation to impute anything to a deceased person, if the imputator would harm the reputation of that person if living, and is intended to be hurtful to the feelings of his family or other near relatives.
+Explanation 2: It may amount to defamation to make an imputation concerning a company or an association or collection of persons as such.
+Explanation 3: An imputation in the form of an alternative or expressed ironically, may amount to defamation.
+Explanation 4: No imputation is said to harm a person's reputation, unless that imputation directly or indirectly, in the estimation of others, lowers the moral or intellectual character of that person, or lowers the character of that person in respect of his caste or of his calling or lowers the credit of that person, or causes it to be believed that the body of that person is in a loathsome state, or in a state generally considered a disgraceful.
+Illustrations:
+(a) A says: "Z is an honest man, he never stole B's watch", intending to cause it to be believed that Z did steal B's watch. This is defamation, unless it falls within one of the exceptions.
+(b) A is asked who stole B's watch. A points to Z, intending to cause it to be believed that Z stole B's watch. This is defamation unless it falls within one of the exceptions.
+(c) A draws a picture of Z running away with B's watch, intending it to be believed that Z stole B's watch. This is defamation, unless it falls within one of the exceptions.
 
 === Section 506: Punishment for Criminal Intimidation ===
-Criminal intimidation is punishable with imprisonment up to two years, or fine, or both. Where threats involve death, grievous hurt, or serious harm, punishment may extend to seven years. The offence centers on threats intended to cause alarm or compel action.
+Whoever commences the offence of criminal intimidation shall be punished with imprisonment of either description for a term which may extend to two years or with fine or with both.
+If threat be to cause death or grievous hurt, etc.:
+And if the threat be to cause death or grievous hurt, or to cause the destruction of any property by fire, or to cause an offence punishable with death or imprisonment for life, or with imprisonment for a term which may extend to seven years, or to impute unchastity to a woman, shall be punished with imprisonment of either description for a term which may extend to seven years, or with fine, or with both.
