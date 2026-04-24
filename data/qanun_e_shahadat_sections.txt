@@ -1,35 +1,268 @@
 === Article 1: Short Title and Commencement ===
-This Article provides the formal introduction to the Qanun-e-Shahadat Order, 1984. It states that the law shall be known by this title and extends to the whole of Pakistan, thereby giving it nationwide applicability. It further declares that the Order shall come into force at once, meaning from the date of its promulgation it becomes operative without requiring further notification. This Article establishes the authority, scope, and enforceability of the law governing evidence. It serves as the foundational clause ensuring that all subsequent provisions relating to admissibility, relevancy, and proof of facts apply uniformly across all courts within the jurisdiction of Pakistan.
+(1) This order may be called the Qanun-eShahadat. 1984.
+(2) It extends to the whole of Pakistan and applies to all judicial proceedings in or before
+any Court, including a Court Martial, a Tribunal or other authority exercising judicial or
+quasi judicial powers or Jurisdiction, but does not apply to proceedings before an
+arbitrator.
+(3) It shall come into force at once.
 
 === Article 2: Definitions ===
-This Article defines key terms essential for interpreting the law of evidence. A “fact” includes anything capable of being perceived by senses or any mental condition of which a person is conscious. A “relevant fact” is one connected to another fact in a manner recognized by the Order. “Document” includes any matter expressed on any substance by means of letters, figures, or marks intended for recording information. “Evidence” includes oral statements made before the Court and documents produced for inspection. The terms “proved,” “disproved,” and “not proved” describe degrees of judicial satisfaction. A fact is proved when the Court believes it exists or considers it highly probable; disproved when it believes it does not exist; and not proved when neither conclusion is reached. These definitions form the backbone of evidentiary evaluation.
+(1) In this Order, unless there is anything repugnant in the subject or
+context—
+(a) "Court" includes ail Judges and Magistrates, and all persons, except arbitrators, legally
+authorised to take evidence;
+(b) "Document" means any matter expressed or described upon any substance by means
+of letters, figures or
+marks, or by more than one of those means, intended to be used, or which may be used,
+for the purpose recording that matter;
+A writing is a document;
+Words printed, lithographed or photographed are documents ;
+A map or plan Is a document;
+An inscription on a metal plate or stone is a document ;
+A caricature is a document.
+(c) "Evidence" includes;
+(i) all statements which the Court permits or requires be made before it by witnesses, m
+relation to matters of fact under inquiry ; such statements are called oral evidence ; and
+(ii) all documents produced for the inspection of the Court; such documents are called
+documentary evidence ;
+(d) "fact" includes—
+(i) anything, state of things, or relation of things capable .of being perceived by the senses
+and
+(ii) any mental condition of which any person is conscious.
+Illustrations
+(a) That there are certain objects arranged in a certain order in a certain place, is a fact.
+(b) That a man heard or saw something. Is a fact.
+(c) That a man said certain words is a fact.
+(d) That a man holds a certain opinion, has a certain intention, acts in good faith or
+fraudulently, or uses a particular word in a particular sense or is or was at a specified time
+conscious of a particular sensation is a fact.
+(e) That a man has a certain reputation is a fact.
+(2) One fact is said to be relevant to another when the one is connected with the other in
+any of the ways referred to in the provisions of the Order relating to the relevancy of facts.
+(3) The expression "facts in issue" includes any fact from which, either by itself or in
+connection with other facts the existence, non-existence, nature or extent of any right,
+liability or disability, asserted or denied in any suit or proceeding, necessarily follows.
+Explanation: Whenever, under the provisions of the law for the time being in force relating
+to civil procedure, any Court records on issue of fact, the fact to be asserted or denied in
+the answer to such issue is a fact in issue.
+Illustrations
+A is accused of the murder of B.
+At his trial the following facts may be in issue:—
+that A caused B's death ;
+that A had intended to cause B's death ;
+that A had received grave sudden provocation from B ;
+that A, at the time of doing the act which caused B's death, was by reason of
+unsoundness of mind, incapable of knowing its nature.
+(4) A fact is said to be proved when, after considering the matters before it, the Court
+either believes it to exist, or considers its existence so probable that a prudent man ought,
+under the circumstances of the particular case, to act upon the supposition that it exists.
+(5) A fact is said to be disproved when after considering the matters before it, the Court
+either believes that it does not exist, or considers its non-existence so probable that a
+prudent man ought, under the circumstances of the particular case, to act upon the
+supposition that it does not exist.
+(6) A fact is said not to be proved when it is neither proved nor disproved.
+(7) Whenever it is provided by this Order that the Court may presume a fact, it may either
+regard such fact as proved, unless and until it is disproved, or may call for proof of it.
+(8) Whenever it is directed by this Order that the Court shall presume a fact, it shall regard
+such fact as proved, unless and until it is disproved.
+(9) When one fact is declared by the Order to be conclusive proof of another, the Court
+shall, on proof of the one fact, regard the other as proved, and shall not allow evidence to
+be given for the purpose of disproving it.
 
 === Article 17: Proof of Facts by Oral Evidence ===
-This Article lays down that all facts, except the contents of documents, may be proved by oral evidence. Oral evidence refers to statements made by witnesses before the Court regarding facts they have personally seen, heard, or perceived. The principle emphasizes direct evidence, requiring that witnesses testify to facts within their own knowledge rather than hearsay. Where documentary evidence exists, its contents must be proved by producing the document itself, subject to exceptions. The Article ensures reliability by prioritizing firsthand testimony and limiting reliance on indirect or secondhand information. It forms a core rule distinguishing between oral and documentary proof.
+(1) The competence of a person to testify,
+and the number of witnesses required in any case shall be determined in accordance With
+the injunctions of Islam as laid down in the Holy Qur'an and Sunnah:"
+(2) Unless otherwise provided in any law relating to the enforcement of Hudood or any
+other special law: —
+(a) in matters pertaining to financial or future obligations, if reduced to writing, the
+instrument shall be attested by two men or one man and two women, so that one may
+remind the other, if necessary, and evidence shall be led accordingly ; and
+(b) in all other matters, the Court may accept, or act on the testimony of one man or one
+woman or such other evidence as the circumstances of the case may warrant. 
 
 === Article 71: Proof of Signature and Handwriting ===
-Under this Article, when a document is alleged to be signed or written by a particular person, the signature or handwriting must be proved to be that of such person. Proof may be established through direct evidence, expert opinion, comparison by the Court, or testimony of a person acquainted with the handwriting. The burden lies on the party asserting authenticity. This provision ensures that documents relied upon in legal proceedings are genuine and attributable to the person concerned. It prevents fraud and forgery by requiring verification before a document can be accepted as evidence.
+ Oral evidence must, in all cases whatever be direct,
+that is to say—
+If it refers to a fact, which could be seen, it must be the evidence of a witness who says he
+saw it;
+If it refers to a fact, which could be heard, it must be the evidence of a witness who says
+he heard it;
+If it refers to a fact, which could be perceived by any other sense or in any other manner, it
+must be the evidence of a witness who says he perceived it by that sense or in that
+manner;
+If it refers to an opinion or to the grounds on which that opinion is held, it must be the
+evidence of the person who holds that opinion on those grounds:
+Provided that the opinions of experts expressed in any treaties commonly offered for sale
+and the grounds on which such opinions are held, maybe proved by the production of
+such treaties if the author is dead, or cannot be found, or has become incapable of giving
+evidence, or cannot be called as a witness without an amount of delay or expense which
+the Court regards as unreasonable:
+Provided further that, if oral evidence refers to the existence or condition of any material
+thing other than a document, the Court may, if it thinks fit, require the production of such
+material thing for its inspection:
+Provided further that, if a witness is dead, or can not be found or has become incapable of
+giving evidence, or his attendance cannot be procured without an amount of delay or
+expense which under the circumstances of the case the Court regards as unreasonable, a
+party shall have the right to produce, “shahada ala al-shahadah” by which a witness can
+appoint two witnesses to depose on his behalf, except in the case of Hudood. 
 
 === Article 117: Burden of Proof ===
-This Article establishes the fundamental rule that the burden of proof lies on the person who asserts the existence of a fact and seeks a legal judgment based on it. The party must prove facts that support his claim or defence. If he fails to do so, the Court will decide against him. This principle ensures fairness by requiring each party to substantiate their assertions rather than relying on the weakness of the opponent’s case. It forms the basis of evidentiary responsibility in both civil and criminal proceedings.
+(1) Whoever desires any Court to give judgment as to any legal
+right or liability dependent On the existence of facts which he asserts, must prove that
+those facts exist.
+(2) When a person is bound to prove the existence of any fact, it is said that the burden of
+proof lies on that person.
+Illustrations
+(a) A desired a Court to give Judgment that B shall be punished for a crime which A says
+B has committee.
+A must prove that B has committed the crime.
+(b) A desires a Court to give judgment that he is entitled to certain land in the possession
+of B by reason of facts, which he asserts, and which B denies to be true.
+A must prove the existence of those facts. 
 
 === Article 118: On Whom Burden of Proof Lies ===
-This provision clarifies that the burden of proof lies on the party who would fail if no evidence were presented by either side. It determines initial responsibility in litigation. For example, in civil cases, the plaintiff typically bears the burden because he seeks relief. However, the burden may shift during proceedings depending on evidence presented. The Article provides a practical test to identify which party must begin proving facts. It ensures orderly conduct of trials and prevents ambiguity regarding evidentiary obligations.
+The burden of proof in a suit or proceeding lies on
+that person who would fail if no evidence at all were given on either side.
+Illustrations
+(a) A sues B for land of which B is in possession, and which, as A asserts was left to A by
+the will of C, B's father.
+If no evidence were given on either side, B would be entitled to retain his possession.
+Therefore the burden of proof is on A.
+(b) A sues B for money due on a bond.
+The execution of the bond is admitted, but B says that it was obtained by fraud, which A
+denies.
+lf no evidence were given on either aide, A would succeed as the bond is not disputed and
+the fraud is not proved.
+Therefore the burden, of proof is on B. 
 
 === Article 119: Burden of Proof as to Particular Fact ===
-This Article states that the burden of proof for any specific fact lies on the person who wishes the Court to believe in its existence, unless the law provides otherwise. It operates alongside general burden rules and applies to individual facts within a case. For instance, if a party claims a particular exception or special circumstance, he must prove it. The Article allows allocation of proof responsibility for distinct issues within the same case, ensuring that each factual assertion is properly supported by evidence.
+ The burden of proof as to any particular fact
+lies on that person who wishes the Court to believe in its existence, unless it is provided
+by any law that the proof of that fact shall lie on any particular person.
+Illustrations
+(a) A prosecutes B for theft, and wishes the Court to believe that B admitted the theft, to
+C. A must prove the admission.
+(b) B wishes the Court to believe that at the time in question, he was elsewhere. He must
+prove it. 
 
 === Article 121: Burden of Proving Fact Especially Within Knowledge ===
-Where a fact is especially within the knowledge of a particular person, the burden of proving that fact lies upon him. This rule is based on practicality and fairness, as it would be difficult for the opposing party to prove facts not accessible to them. For example, matters relating to a person’s intention, internal records, or personal conduct may fall within this category. The Article shifts evidentiary responsibility to the party best positioned to produce proof, ensuring efficient administration of justice.
+When a
+person is accused of any offence the burden of proving the existence of circumstances
+bringing the case within any of the General Exceptions in the Pakistan Penal Code (Act
+XLV of 1860), or within any special exception or proviso contained in any other part of the
+same Code, or in any law defining the offence, is upon him, and the Court shall presume
+the absence of such circumstances.
+Illustrations
+(a) “A” accused of murder, alleges that by reason of unsoundness of mind, he did not
+know the nature of the act.
+The burden of proof is on A.
+(b) A, accused of murder, alleges that, by grave and sudden provocation, he was deprived
+of the power of self-control.
+The burden of proof is on A.
+(c) Section 325 of the Pakistan Penal Code (Act XLV of 1860) provides that whoever,
+except in the case provided for by Section 335 voluntarily causes grievous hurt, shall be
+subject to certain punishments.
+A is charged with voluntarily causing grievous hurt under Section 325.
+The burden of proving the circumstances bringing the case under Section 336 lies on A
 
 === Article 129: Estoppel ===
-This Article embodies the doctrine of estoppel, which prevents a person from denying a fact that he has previously represented as true and upon which another person has relied. If one party, by declaration, act, or omission, causes another to believe something and act upon it, he cannot later contradict that representation in legal proceedings. The principle promotes fairness, consistency, and good faith in dealings. Estoppel operates as a rule of evidence, barring contradictory claims and protecting parties from injustice arising from reliance on representations.
+ The Court may presume the
+existence of any fact which it thinks likely to have happened, regard being had to the
+common course of natural events, human conduct and public and private business, in
+their relation to the facts of the particular case.
+Illustrations
+The Court may presume—
+(a) that a man who is in possession of stolen goods soon after the theft is either the thief
+or has received the goods knowing them to be stolen, unless he can account for his
+possession ;
+(b) that an accomplice is unworthy of credit, unless he is corroborated in material
+particulars ;
+(c) that a bill of exchange, accepted or endorsed, was accepted or endorsed for good
+consideration ;
+(d) that a thing or state of things which has been shown to be in existence within a period
+shorter than that within which such things or states of things usually cease to exist, is still
+in existence ;
+(e) that judicial and official acts have been regularly performed ;
+(f) that the common course of business has been followed in particular cases;
+(g) that evidence which could be and is not produced would, if produced, be unfavourable
+to the person who withholds it ;
+(h) that, if a man refuses to answer a question which he is not compelled to answer by
+law, the answer, if given, would be unfavourable to him
+(i) that when a document creating an obligation is in the hands of the obligor, the
+obligation has been discharged.
+But the Court shall also have regard to such facts as the following, in considering whether
+such maxims do or do not apply to the particular case before it;
+as to illustration (a) : a shopkeeper has in his till marked rupee soon after it was stolen,
+and cannot account for its possession specifically, but is continually receiving rupees
+in the course of his business ;
+as to illustration (a) : A. person of the highest character, is tried for causing a man's death
+by an act of negligence in arranging certain machinery, B, a person of equally good
+character, who also took part in the arrangement, describes precisely what was
+done, and admits and explains the common carelessness of A and himself ;
+as to illustration (b) : A crime is committed by several persons. A, B and C. three of the
+criminals, are captured on the shop and kept apart from each other. Each gives an
+account of the crime implicating D and the accounts corroborate each other in such a
+manner as to render previous concert highly improbable;
+as to illustration (c) : A. the drawer of a bill of exchange, was a man of business. B; the
+acceptor, was a young and ignorant person, completely under A's influence;
+as to illustration (d) : It is proved that a river ran in a certain course five years ago. But it is
+known that there have been floods since that time which might change its course ;
+as to illustration (e): a judicial act, the regularity of which is in question, was performed
+under exceptional circumstances ;
+as to illustration (f): the question is, whether a letter was received. It is shown to have
+been posted, but the usual course of the post was interrupted by disturbances;
+as to illustration (g) : a man refuses to produce a document which would bear on a
+contract of small importance on which he is sued. but which might also injure the
+feelings and reputation of his family;
+as to illustration (h) : a man refuses to answer a question which he is not compelled by law
+to answer, but the answer to it might cause loss to him in matters unconnected with
+the matter in relation to which it is asked ;
+as to illustration (i) : a bond is in possession of the obligor, but the circumstances of the
+case are such that he may have stolen it. 
 
 === Article 150: Who May Testify ===
-This Article declares that all persons are competent to testify unless the Court considers them incapable of understanding questions or giving rational answers. Incapacity may arise due to tender age, old age, disease, or mental or physical disability. Competency is thus a question of ability rather than status. Even children may testify if they possess sufficient understanding. The Court evaluates competency before recording evidence. The provision ensures inclusivity while maintaining reliability of testimony.
+The Court may, in its discretion, permit the
+person who calls a witness to put any questions to him, which might be put in crossexamination by the adverse party. 
 
 === Article 151: Dumb Witnesses ===
-A witness who is unable to speak may give evidence in any intelligible manner, such as writing or signs. Such communication must be made in open Court to ensure transparency and authenticity. The evidence so given is treated as oral evidence. The Court may take assistance of interpreters if necessary. This Article ensures that disability does not prevent a person from giving testimony, thereby promoting access to justice while maintaining procedural safeguards.
+ The credit of a witness may be impeached in the
+following ways by the adverse party or with the consent of the Court, by the party who
+calls him:
+(1) by the evidence of persons who testify that they, from their knowledge of the witness,
+believe him to be un-worthy of credit;
+(2) by proof that the witness has been bribed, or has accepted the offer of a bribe, or has
+received any other corrupt inducement to give his evidence ;
+(3) by proof of former statements inconsistent with any part of his evidence which is liable
+to be contradicted ;
+(4) when a man is prosecuted for rape or an attempt to ravish, it may be shown that the
+prosecutrix was of generally immoral character.
+Explanation: A witness declaring another witness to be unworthy of credit may not, upon
+his examination-in-chief, give reason for his belief, but he may be asked his reasons in
+cross examination, and the answers which he gives cannot be contradicted, though, if
+they are false, he may afterwards be charged with giving false evidence.
+Illustrations
+(a) A sues B for the price of goods sold and delivered to B. C says that A delivered the
+goods to B.
+Evidence is offered to show that, on a previous occasion, he said that he had not
+delivered the goods to B.
+The evidence is admissible.
+(b) “A” if indicated for the murder of B.
+C says that B, when dying, declared that A had given B the wound of which he died.
+Evidence is offered to show that, on a previous occasion, C said that the wound was not
+given by A or in his presence,
+The evidence is admissible. 
 
 === Article 152: Parties to Civil Suit and Their Spouses — Competency ===
-In civil proceedings, the parties to the suit, as well as their husbands or wives, are competent witnesses. This provision removes earlier restrictions on spousal testimony and allows relevant evidence to be presented. Competency does not mean compellability in all cases, but it ensures that such persons are not disqualified merely due to their relationship. The Article enhances the availability of evidence and supports fair adjudication by permitting those closely connected to the dispute to testify where appropriate.
+When a
+witness whom it is intended to corroborate gives evidence of any relevant fact, he may be
+questioned as to any other circumstances which he observed at or near to the time or
+place at which such relevant fact occurred if the Court is of opinion that such
+circumstances, if proved, would corroborate the testimony of the witness as to the relevant
+fact which he testifies.
+Illustrations
+A, an accomplice, gives an account of robbery in which he took part He describes various
+incidents unconnected with the robbery which occurred on his way to and from the place
+where it was committed.
+Independent evidence of these facts may be given in order to corroborate his evidence as
+to the robbery itself. 
