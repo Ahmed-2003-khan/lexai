@@ -94,9 +94,9 @@ async def test_search(pipeline: IngestionPipeline, embedder: DocumentEmbedder):
                 passed_all = False
 
     if passed_all:
-        console.print("\n[bold green]✅ All test queries passed.[/bold green]")
+        console.print("\n[bold green]SUCCESS: All test queries passed.[/bold green]")
     else:
-        console.print("\n[bold yellow]⚠️ Warning: Some queries returned scores < 0.5[/bold yellow]")
+        console.print("\n[bold yellow]WARNING: Some queries returned scores < 0.5[/bold yellow]")
 
 async def main():
     parser = argparse.ArgumentParser(description="Seed LexAI database")
@@ -172,7 +172,7 @@ async def main():
 
     console.print()
     console.print(table)
-    console.print("\n[bold green]✅ Vector database is ready for querying.[/bold green]")
+    console.print("\n[bold green]SUCCESS: Vector database is ready for querying.[/bold green]")
 
     if not args.dry_run:
         await test_search(pipeline, embedder)
