@@ -43,36 +43,31 @@ class IngestionPipeline:
         """Uses asyncpg driver directly for fast batched upsert operations."""
         await self._ensure_schema()
         
-        insert_query = """
+        insert_query = text("""
             INSERT INTO documents 
             (title, source, jurisdiction, doc_type, content, embedding, chunk_index, created_at, updated_at)
-            VALUES ($1, $2, $3, $4, $5, $6::vector, $7, now(), now())
+            VALUES (:title, :source, :jurisdiction, :doc_type, :content, CAST(:embedding AS vector), :chunk_index, now(), now())
             ON CONFLICT (source, chunk_index) DO UPDATE 
             SET content = EXCLUDED.content, 
                 embedding = EXCLUDED.embedding, 
                 updated_at = now()
-        """
+        """)
         
         records = []
         for chunk, emb in zip(chunks, embeddings):
             meta = chunk["metadata"]
-            records.append((
-                meta["title"],
-                meta["source"],
-                meta["jurisdiction"],
-                meta["doc_type"],
-                chunk["text"],
-                str(emb),
-                chunk["chunk_index"]
-            ))
+            records.append({
+                "title": meta["title"],
+                "source": meta["source"],
+                "jurisdiction": meta["jurisdiction"],
+                "doc_type": meta["doc_type"],
+                "content": chunk["text"],
+                "embedding": str(emb),
+                "chunk_index": chunk["chunk_index"]
+            })
 
-        # Access asyncpg connection directly from SQLAlchemy async engine
-        raw_conn = await self.engine.raw_connection()
-        try:
-            asyncpg_conn = raw_conn.driver_connection
-            await asyncpg_conn.executemany(insert_query, records)
-        finally:
-            await raw_conn.close()
+        async with self.engine.begin() as conn:
+            await conn.execute(insert_query, records)
 
         return len(records)
 
