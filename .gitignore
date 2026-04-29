@@ -52,6 +52,4 @@ postgres_data/
 grafana_data/
 
 # Machine Learning Models
-models/**/*.onnx
-models/**/*.bin
-models/**/*.pt
+models/
