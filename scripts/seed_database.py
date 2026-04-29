@@ -1,19 +1,14 @@
 import os
-import sys
 import asyncio
 import argparse
-from pathlib import Path
 from dotenv import load_dotenv
 from rich.console import Console
 from rich.table import Table
 from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn, TimeElapsedColumn
 
-# Add project root to sys.path
-root_path = Path(__file__).parent.parent
-sys.path.append(str(root_path))
-
 from ingestion.embedder import DocumentEmbedder
 from ingestion.pipeline import IngestionPipeline
+from retriever.engine import DPRInferenceEngine
 
 load_dotenv()
 console = Console()
@@ -56,8 +51,8 @@ SEED_FILES = [
     },
 ]
 
-async def test_search(pipeline: IngestionPipeline, embedder: DocumentEmbedder):
-    """Runs tests against the seeded database."""
+async def test_search(pipeline: IngestionPipeline, embedder: DocumentEmbedder, engine_is_dpr: bool):
+    """Executes search tests using the appropriate query encoding strategy."""
     queries = [
         "punishment for murder in Pakistan",
         "requirements for a valid contract",
@@ -70,12 +65,16 @@ async def test_search(pipeline: IngestionPipeline, embedder: DocumentEmbedder):
     async with pipeline.engine.connect() as conn:
         from sqlalchemy import text
         for q in queries:
-            vec = embedder.embed(q)
-            # Find closest documents using pgvector cosine distance operator (<=>)
+            
+            if engine_is_dpr:
+                vec = embedder.dpr_engine.embed_query(q)
+            else:
+                vec = embedder.embed(q)
+
             query = text("""
-                SELECT title, source, 1 - (embedding <=> CAST(:vec AS vector)) AS score 
+                SELECT title, source, 1 - (embedding <=> :vec::vector) AS score 
                 FROM documents 
-                ORDER BY embedding <=> CAST(:vec AS vector) 
+                ORDER BY embedding <=> :vec::vector 
                 LIMIT 3
             """)
             
@@ -94,14 +93,15 @@ async def test_search(pipeline: IngestionPipeline, embedder: DocumentEmbedder):
                 passed_all = False
 
     if passed_all:
-        console.print("\n[bold green]SUCCESS: All test queries passed.[/bold green]")
+        console.print("\n[bold green]✅ All test queries passed.[/bold green]")
     else:
-        console.print("\n[bold yellow]WARNING: Some queries returned scores < 0.5[/bold yellow]")
+        console.print("\n[bold yellow]⚠️ Warning: Some queries returned scores < 0.5[/bold yellow]")
 
 async def main():
     parser = argparse.ArgumentParser(description="Seed LexAI database")
     parser.add_argument("--reset", action="store_true", help="Clear documents table before seeding")
     parser.add_argument("--dry-run", action="store_true", help="Process files without DB insertion")
+    parser.add_argument("--use-dpr", action="store_true", help="Use custom trained ONNX DPR models instead of SentenceTransformers")
     args = parser.parse_args()
 
     db_url = os.getenv("DATABASE_URL")
@@ -110,7 +110,17 @@ async def main():
         return
 
     console.print("[bold yellow]Initializing models and pipeline...[/bold yellow]")
-    embedder = DocumentEmbedder()
+    
+    dpr_engine = None
+    if args.use-dpr:
+        console.print("[blue]Loading ONNX DPR Models...[/blue]")
+        dpr_engine = DPRInferenceEngine(
+            query_onnx_path="models/dpr/query_encoder.onnx",
+            passage_onnx_path="models/dpr/passage_encoder.onnx",
+            tokenizer_path="models/dpr/tokenizer"
+        )
+    
+    embedder = DocumentEmbedder(dpr_engine=dpr_engine)
     pipeline = IngestionPipeline(db_url=db_url, embedder=embedder) if not args.dry_run else None
 
     if args.reset and not args.dry_run:
@@ -132,7 +142,6 @@ async def main():
 
         for file_meta in SEED_FILES:
             if args.dry_run:
-                # Dry run mock
                 summary_data.append((file_meta["title"], 10, 300))
                 progress.advance(task)
                 continue
@@ -172,10 +181,10 @@ async def main():
 
     console.print()
     console.print(table)
-    console.print("\n[bold green]SUCCESS: Vector database is ready for querying.[/bold green]")
+    console.print("\n[bold green]✅ Vector database is ready for querying.[/bold green]")
 
     if not args.dry_run:
-        await test_search(pipeline, embedder)
+        await test_search(pipeline, embedder, engine_is_dpr=args.use_dpr)
 
 if __name__ == "__main__":
     asyncio.run(main())
