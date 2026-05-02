@@ -1,7 +1,7 @@
 import logging
 import asyncpg
 from typing import List, Optional, Type, Dict, Any
-from langchain.tools import StructuredTool
+from langchain_core.tools import StructuredTool
 from pydantic import BaseModel, Field
 
 from retriever.engine import DPRInferenceEngine
