@@ -3,7 +3,6 @@ FROM python:3.11-slim as builder
 
 WORKDIR /build
 
-# Install system build dependencies required for compiling certain Python packages
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     libpq-dev \
@@ -11,17 +10,17 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 COPY pyproject.toml .
 
-# Create and activate a virtual environment to isolate dependencies
 RUN python -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
-# Upgrade pip to the latest version for better dependency resolution
 RUN pip install --no-cache-dir --upgrade pip
-
-# Install light-weight CPU-only versions of PyTorch to save space and memory
 RUN pip install --no-cache-dir torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 
-# Install the rest of the project dependencies
+# Code folders ko install se pehle copy karna zaroori hai
+COPY api/ ./api/
+COPY ingestion/ ./ingestion/
+COPY retriever/ ./retriever/
+
 RUN pip install --no-cache-dir .
 
 # Stage 2: Runtime
@@ -29,27 +28,22 @@ FROM python:3.11-slim as runtime
 
 WORKDIR /app
 
-# Install runtime system dependencies (libpq5 for Postgres, curl for health checks)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libpq5 \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy the isolated virtual environment from the builder stage
 COPY --from=builder /opt/venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
-# Copy all necessary application code and machine learning models
+# Runtime folders
 COPY api/ ./api/
 COPY ingestion/ ./ingestion/
 COPY retriever/ ./retriever/
-COPY models/ ./models/
 
-# Create a non-root user for security purposes and set permissions
 RUN useradd -m lexai && chown -R lexai /app
 USER lexai
 
 EXPOSE 8000
 
-# Start the FastAPI application using Uvicorn
 CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]

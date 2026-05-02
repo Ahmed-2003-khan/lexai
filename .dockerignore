@@ -16,3 +16,5 @@ grafana_data/
 # Ignore git history
 .git/
 .github/
+
+models/

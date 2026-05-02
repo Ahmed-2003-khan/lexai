@@ -11,6 +11,14 @@ services:
         condition: service_healthy
     env_file:
       - ../.env
+    # Map local directories directly into the container to avoid heavy copy operations during build
+    volumes:
+      - ../api:/app/api
+      - ../ingestion:/app/ingestion
+      - ../retriever:/app/retriever
+      - ../models:/app/models
+      - ../scripts:/app/scripts
+      - ../data:/app/data
     ports:
       - "8000:8000"
     networks:
