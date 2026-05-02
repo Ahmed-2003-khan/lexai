@@ -1,4 +1,4 @@
-from langchain.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate
 
 # System prompt directing the planner node behavior and structuring expectations
 PLANNER_SYSTEM_PROMPT = """You are a legal research planning assistant. 

@@ -7,15 +7,15 @@ Evaluate the answer on the following 4 dimensions, assigning a score from 0.0 to
 4. clarity
 
 Output ONLY valid JSON matching this exact structure:
-{
-  "scores": {
+{{
+  "scores": {{
     "factual_accuracy": 0.0,
     "citation_quality": 0.0,
     "completeness": 0.0,
     "clarity": 0.0
-  },
+  }},
   "overall_score": 0.0,
   "issues": ["list of issues found"],
   "should_retry": false,
   "retry_reason": "string explaining why"
-}"""
+}}"""
