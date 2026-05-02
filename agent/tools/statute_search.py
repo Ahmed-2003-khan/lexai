@@ -1,5 +1,5 @@
 from typing import Optional
-from langchain.tools import StructuredTool
+from langchain_core.tools import StructuredTool
 from pydantic import BaseModel, Field
 from agent.tools.legal_retriever import LegalVectorRetriever
 
