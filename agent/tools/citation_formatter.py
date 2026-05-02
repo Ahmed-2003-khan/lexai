@@ -1,5 +1,5 @@
 from typing import Optional
-from langchain.tools import tool
+from langchain_core.tools import tool
 
 @tool
 def format_legal_citation(title: str, source: str, doc_type: str, year: Optional[str] = None) -> str:
