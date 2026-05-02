@@ -1,6 +1,6 @@
 import re
 from datetime import datetime, timedelta
-from langchain.tools import tool
+from langchain_core.tools import tool
 
 @tool
 def legal_calculator(expression: str) -> str:
