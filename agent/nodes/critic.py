@@ -43,6 +43,8 @@ async def critic_node(state: AgentState) -> AgentState:
             state["final_answer"] = state["draft_answer"]
             
     except Exception as e:
+        import logging
+        logging.error(f"Error in critic_node: {e}")
         # Fallback to prevent infinite looping on parse error
         state["should_retry"] = False
         state["final_answer"] = state.get("draft_answer", "Error parsing evaluation.")

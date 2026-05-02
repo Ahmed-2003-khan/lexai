@@ -29,6 +29,8 @@ async def planner_node(state: AgentState) -> AgentState:
         plan = json.loads(response.content)
         state["plan"] = plan
     except Exception as e:
+        import logging
+        logging.error(f"Error in planner_node: {e}")
         # Fallback to the original query if JSON parsing fails
         state["plan"] = [state["query"]]
         
