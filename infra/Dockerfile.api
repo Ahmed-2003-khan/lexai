@@ -20,8 +20,9 @@ RUN pip install --no-cache-dir torch torchvision torchaudio --index-url https://
 COPY api/ ./api/
 COPY ingestion/ ./ingestion/
 COPY retriever/ ./retriever/
+COPY agent/ ./agent/
 
-RUN pip install --no-cache-dir .
+RUN pip install --no-cache-dir ".[dev]"
 
 # Stage 2: Runtime
 FROM python:3.11-slim as runtime
@@ -40,6 +41,8 @@ ENV PATH="/opt/venv/bin:$PATH"
 COPY api/ ./api/
 COPY ingestion/ ./ingestion/
 COPY retriever/ ./retriever/
+COPY agent/ ./agent/
+COPY tests/ ./tests/
 
 RUN useradd -m lexai && chown -R lexai /app
 USER lexai
