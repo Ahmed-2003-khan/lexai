@@ -10,7 +10,7 @@ from pythonjsonlogger import jsonlogger
 import sentry_sdk
 
 from api.config import get_settings
-from api.routes import health, query
+from api.routes import health, query, ingest
 
 settings = get_settings()
 
