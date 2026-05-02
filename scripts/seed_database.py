@@ -47,7 +47,7 @@ SEED_FILES = [
         "title": "Constitution of Pakistan 1973 — Fundamental Rights",
         "source": "CONST-1973-PART-II",
         "jurisdiction": "PK",
-        "doc_type": "constitution"
+        "doc_type": "statute"
     },
 ]
 
@@ -66,15 +66,17 @@ async def test_search(pipeline: IngestionPipeline, embedder: DocumentEmbedder, e
         from sqlalchemy import text
         for q in queries:
             
+            # Select the appropriate embedding method based on the active engine
             if engine_is_dpr:
                 vec = embedder.dpr_engine.embed_query(q)
             else:
                 vec = embedder.embed(q)
 
+            # Define the SQL query using CAST for the vector parameter to ensure asyncpg driver compatibility
             query = text("""
-                SELECT title, source, 1 - (embedding <=> :vec::vector) AS score 
+                SELECT title, source, 1 - (embedding <=> CAST(:vec AS vector)) AS score 
                 FROM documents 
-                ORDER BY embedding <=> :vec::vector 
+                ORDER BY embedding <=> CAST(:vec AS vector) 
                 LIMIT 3
             """)
             
@@ -112,7 +114,7 @@ async def main():
     console.print("[bold yellow]Initializing models and pipeline...[/bold yellow]")
     
     dpr_engine = None
-    if args.use-dpr:
+    if args.use_dpr:
         console.print("[blue]Loading ONNX DPR Models...[/blue]")
         dpr_engine = DPRInferenceEngine(
             query_onnx_path="models/dpr/query_encoder.onnx",

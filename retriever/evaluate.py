@@ -36,9 +36,9 @@ async def evaluate_retrieval(engine: DPRInferenceEngine, db_url: str) -> Dict[st
             query_vector = engine.embed_query(query_text)
             
             sql = text("""
-                SELECT title, source, 1 - (embedding <=> :vec::vector) AS score 
-                FROM documents 
-                ORDER BY embedding <=> :vec::vector 
+                SELECT title, source, 1 - (embedding <=> CAST(:vec AS vector)) AS score
+                FROM documents
+                ORDER BY embedding <=> CAST(:vec AS vector)
                 LIMIT 5
             """)
             

@@ -81,38 +81,56 @@ class DPRInferenceEngine:
         return embedding.tolist()
 
     def embed_passages_batch(self, texts: List[str], batch_size: int = 32) -> List[List[float]]:
-        """Processes multiple passages in batches using the ONNX passage encoder."""
+        """
+        Processes multiple passages to generate embeddings using the ONNX passage encoder.
+        Executes inference sequentially to align with the fixed ONNX graph dimensions.
+        """
         embeddings = []
         
-        for i in tqdm(range(0, len(texts), batch_size), desc="Embedding passages"):
-            batch_texts = texts[i:i + batch_size]
+        # Iterate over each text individually to satisfy the model's single-sequence input requirement
+        for text in tqdm(texts, desc="Embedding passages"):
             
+            # Tokenize a single text string into numpy arrays
             encoded = self.tokenizer(
-                batch_texts,
+                text,
                 max_length=self.max_length,
                 padding="max_length",
                 truncation=True,
                 return_tensors="np"
             )
             
+            # Prepare the input dictionary for the ONNX runtime session
             inputs = {
                 "input_ids": encoded["input_ids"].astype(np.int64),
                 "attention_mask": encoded["attention_mask"].astype(np.int64)
             }
             
+            # Execute the ONNX computation graph
             outputs = self.passage_session.run(None, inputs)
+            
+            # Extract the hidden states from the model output
             last_hidden_states = outputs[0]
             
+            # Expand the attention mask to match the hidden state dimensions for broadcasting
             input_mask_expanded = np.expand_dims(inputs["attention_mask"], -1)
+            
+            # Compute the sum of embeddings, zeroing out padding tokens via the mask
             sum_embeddings = np.sum(last_hidden_states * input_mask_expanded, axis=1)
+            
+            # Calculate the number of valid tokens to use as the denominator
             sum_mask = np.clip(np.sum(input_mask_expanded, axis=1), a_min=1e-9, a_max=None)
             
+            # Perform mean pooling to get a single vector representation for the passage
             mean_pooled = sum_embeddings / sum_mask
             
+            # Calculate the L2 norm for the pooled vector
             norms = np.linalg.norm(mean_pooled, axis=1, keepdims=True)
             norms = np.where(norms == 0, 1e-10, norms)
+            
+            # Apply L2 normalization to the pooled vector
             normalized_batch = mean_pooled / norms
             
+            # Append the resulting feature vector to the embeddings list
             embeddings.extend(normalized_batch.tolist())
             
         return embeddings
