@@ -52,8 +52,16 @@ class LegalVectorRetriever:
             
             results = []
             for row in rows:
-                result_dict = dict(row)
-                results.append(SearchResult(**result_dict))
+                # Map database row keys to the exact fields expected by the SearchResult Pydantic model
+                mapped_result = {
+                    "doc_id": str(row["id"]),
+                    "title": row["title"],
+                    "source": row["source"],
+                    "content_snippet": row["content"],
+                    "citation": f"{row['title']} ({row['source']})",
+                    "score": float(row["score"])
+                }
+                results.append(SearchResult(**mapped_result))
                 
             if results:
                 logger.debug(f"Query: '{query}' | Top Match Score: {results[0].score:.4f}")
