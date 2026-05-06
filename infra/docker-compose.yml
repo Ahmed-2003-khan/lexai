@@ -91,24 +91,27 @@ services:
   prometheus:
     image: prom/prometheus:latest
     container_name: lexai_prometheus
+    restart: unless-stopped
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
     ports:
       - "9090:9090"
     networks:
-      - lexai-net
+      - lexai-net 
 
   grafana:
     image: grafana/grafana:latest
     container_name: lexai_grafana
+    restart: unless-stopped
     ports:
       - "3000:3000"
-    volumes:
-      - grafana_data:/var/lib/grafana
-    networks:
-      - lexai-net
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
     depends_on:
       - prometheus
+    networks:
+      - lexai-net
 
 networks:
   lexai-net:

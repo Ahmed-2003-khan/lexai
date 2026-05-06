@@ -39,11 +39,11 @@ CREATE TABLE IF NOT EXISTS users (
 );
 
 CREATE TABLE IF NOT EXISTS query_logs (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    user_id UUID REFERENCES users(id),
+    id SERIAL PRIMARY KEY,
+    user_id UUID,
     query TEXT NOT NULL,
-    jurisdiction TEXT,
-    doc_types TEXT[],
+    jurisdiction VARCHAR(100),
+    doc_types TEXT[],           
     response JSONB,
-    created_at TIMESTAMPTZ DEFAULT NOW()
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
