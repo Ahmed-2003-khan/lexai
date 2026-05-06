@@ -1,71 +1,35 @@
-from typing import List, Optional
-import numpy as np
-import torch
-from sentence_transformers import SentenceTransformer
+from typing import List
 from retriever.engine import DPRInferenceEngine
 
-
 class DocumentEmbedder:
-    """Generates dense vector embeddings for document chunks. Interfaces seamlessly with SentenceTransformers or DPR."""
+    """
+    Generates dense vector embeddings for document chunks. 
+    Interfaces exclusively with the custom DPR ONNX Engine.
+    """
 
-    def __init__(
-        self, 
-        model_name: str = "sentence-transformers/msmarco-bert-base-dot-v5",
-        dpr_engine: Optional[DPRInferenceEngine] = None
-    ):
-        self.dpr_engine = dpr_engine
-        
-        if self.dpr_engine:
-            print("DocumentEmbedder initialized with custom DPR Engine.")
-            return
-
-        self.model_name = model_name
-        
-        if torch.cuda.is_available():
-            self.device = "cuda"
-        elif torch.backends.mps.is_available():
-            self.device = "mps"
-        else:
-            self.device = "cpu"
-            
-        print(f"DocumentEmbedder initialized with SentenceTransformer on device: {self.device}")
-        self.model = SentenceTransformer(self.model_name, device=self.device)
+    def __init__(self, query_encoder_path: str, passage_encoder_path: str, tokenizer_path: str):
+        try:
+            self.dpr_engine = DPRInferenceEngine(query_encoder_path, passage_encoder_path, tokenizer_path)
+            print("✅ DocumentEmbedder initialized with DPR ONNX Engine")
+        except Exception as e:
+            print(f"⚠️ Error loading DPR engine: {e}")
+            self.dpr_engine = None
 
     @property
     def embedding_dim(self) -> int:
-        """Returns the dimensionality of the generated embeddings."""
         return 768
 
-    def _l2_normalize(self, vectors: np.ndarray) -> np.ndarray:
-        """Applies L2 normalization to ensure unit length vectors."""
-        norms = np.linalg.norm(vectors, axis=1, keepdims=True)
-        norms = np.where(norms == 0, 1e-10, norms)
-        return vectors / norms
-
     def embed(self, text: str) -> List[float]:
-        """Embeds a single string and returns an L2-normalized float list."""
-        if self.dpr_engine:
-            return self.dpr_engine.embed_passage(text)
+        if not self.dpr_engine:
+            raise ValueError("DPR Engine is not initialized.")
+        return self.dpr_engine.embed_passage(text)
 
-        vec = self.model.encode([text], convert_to_numpy=True)
-        vec_norm = self._l2_normalize(vec)[0]
-        return vec_norm.tolist()
-
-    def embed_batch(
-        self, 
-        texts: List[str], 
-        batch_size: int = 32, 
-        show_progress: bool = True
-    ) -> List[List[float]]:
-        """Embeds a list of strings in batches and returns normalized float lists."""
-        if self.dpr_engine:
+    def embed_batch(self, texts: List[str], batch_size: int = 32) -> List[List[float]]:
+        if not self.dpr_engine:
+            raise ValueError("DPR Engine is not initialized.")
+        if hasattr(self.dpr_engine, 'embed_passages_batch'):
             return self.dpr_engine.embed_passages_batch(texts, batch_size=batch_size)
+        return [self.dpr_engine.embed_passage(text) for text in texts]
 
-        vectors = self.model.encode(
-            texts, 
-            batch_size=batch_size, 
-            show_progress_bar=show_progress,
-            convert_to_numpy=True
-        )
-        vectors_norm = self._l2_normalize(vectors)
-        return vectors_norm.tolist()
+    def embed_documents(self, texts: List[str]) -> List[List[float]]:
+        return self.embed_batch(texts)

@@ -20,7 +20,21 @@ class IngestionPipeline:
         self.engine = create_async_engine(self.db_url)
         self.loader = DocumentLoader()
         self.chunker = chunker or LegalDocumentChunker()
-        self.embedder = embedder or DocumentEmbedder()
+        
+        # Naya logic DPR arguments pass karne ke liye
+        if embedder is None:
+            import os
+            query_path = os.getenv("QUERY_ENCODER_PATH", "models/dpr/query_encoder.onnx")
+            passage_path = os.getenv("PASSAGE_ENCODER_PATH", "models/dpr/passage_encoder.onnx")
+            tokenizer_path = os.getenv("TOKENIZER_PATH", "models/dpr/tokenizer")
+            
+            self.embedder = DocumentEmbedder(
+                query_encoder_path=query_path,
+                passage_encoder_path=passage_path,
+                tokenizer_path=tokenizer_path
+            )
+        else:
+            self.embedder = embedder
 
     async def _ensure_schema(self):
         """Ensures the chunk_index and updated_at columns exist (migration)."""
