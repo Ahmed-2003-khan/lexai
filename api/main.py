@@ -15,7 +15,7 @@ from api.routes import health, query, ingest, auth, documents
 settings = get_settings()
 
 def setup_logging() -> None:
-    """Configures structured JSON logging."""
+    """Configures structured JSON logging for the application."""
     logger = logging.getLogger()
     logger.setLevel(settings.LOG_LEVEL)
     
@@ -92,9 +92,17 @@ async def request_logging_middleware(request: Request, call_next):
     response.headers["X-Trace-Id"] = trace_id
     return response
 
-Instrumentator().instrument(app).expose(app)
+# Configure Prometheus to expose standard HTTP metrics
+instrumentator = Instrumentator(
+    should_group_status_codes=False,
+    should_ignore_untemplated=True,
+    should_respect_env_var=False,
+    should_instrument_requests_inprogress=True,
+    excluded_handlers=[".*admin.*", "/metrics"],
+    env_var_name="ENABLE_METRICS",
+)
+instrumentator.instrument(app).expose(app, endpoint="/metrics")
 
-# Include all application routers
 app.include_router(health.router, prefix="/health")
 app.include_router(auth.router)
 app.include_router(documents.router)
