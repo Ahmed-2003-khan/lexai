@@ -26,3 +26,24 @@ CREATE TABLE query_logs (
     tokens_used INT NOT NULL,
     created_at TIMESTAMPTZ DEFAULT now()
 );
+
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+CREATE TABLE IF NOT EXISTS users (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    username TEXT UNIQUE NOT NULL,
+    email TEXT UNIQUE NOT NULL,
+    hashed_password TEXT NOT NULL,
+    is_active BOOL DEFAULT true,
+    created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS query_logs (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    user_id UUID REFERENCES users(id),
+    query TEXT NOT NULL,
+    jurisdiction TEXT,
+    doc_types TEXT[],
+    response JSONB,
+    created_at TIMESTAMPTZ DEFAULT NOW()
+);

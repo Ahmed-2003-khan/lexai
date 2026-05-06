@@ -11,11 +11,14 @@ services:
         condition: service_healthy
     env_file:
       - ../.env
-    # Map local directories directly into the container to avoid heavy copy operations during build
+    environment:
+      - RETRIEVER_URL=http://retriever:8001
+      - JWT_SECRET=supersecretkey_change_in_production
     volumes:
       - ../api:/app/api
       - ../ingestion:/app/ingestion
       - ../retriever:/app/retriever
+      - ../agent:/app/agent
       - ../models:/app/models
       - ../scripts:/app/scripts
       - ../data:/app/data
@@ -28,6 +31,28 @@ services:
       interval: 30s
       timeout: 10s
       retries: 3
+
+  retriever:
+    build: 
+      context: ..
+      dockerfile: infra/Dockerfile.api
+    container_name: lexai_retriever
+    depends_on:
+      postgres:
+        condition: service_healthy
+    command: >
+      bash -c "if [ -f 'models/dpr/query_encoder.onnx' ]; then python -m retriever.serve; else echo 'Models not found, skipping retriever'; sleep infinity; fi"
+    volumes:
+      - ../api:/app/api
+      - ../ingestion:/app/ingestion
+      - ../retriever:/app/retriever
+      - ../models:/app/models
+      - ../scripts:/app/scripts
+      - ../data:/app/data
+    ports:
+      - "8001:8001"
+    networks:
+      - lexai-net
 
   postgres:
     image: pgvector/pgvector:pg16
