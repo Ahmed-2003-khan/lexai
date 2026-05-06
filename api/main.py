@@ -10,7 +10,7 @@ from pythonjsonlogger import jsonlogger
 import sentry_sdk
 
 from api.config import get_settings
-from api.routes import health, query, ingest
+from api.routes import health, query, ingest, auth, documents
 
 settings = get_settings()
 
@@ -94,6 +94,9 @@ async def request_logging_middleware(request: Request, call_next):
 
 Instrumentator().instrument(app).expose(app)
 
+# Include all application routers
 app.include_router(health.router, prefix="/health")
-app.include_router(query.router, prefix="/api/v1")
+app.include_router(auth.router)
+app.include_router(documents.router)
+app.include_router(query.router)
 app.include_router(ingest.router, prefix="/api/v1")

@@ -1,75 +1,29 @@
-import uuid
-import json
-import asyncio
-from datetime import datetime, timezone
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, Query
 from fastapi.responses import StreamingResponse
+from api.schemas.query import QueryRequest, QueryResponse
+from api.services.query_service import QueryService
+from api.routes.auth import get_current_user
+from api.config import get_settings
 
-from api.schemas.query import QueryRequest, QueryResponse, SearchResult, SubTask, StreamEvent
-from api.middleware.rate_limit import rate_limit_dependency
+settings = get_settings()
 
-router = APIRouter(tags=["query"])
+# Make sure tools and graph are initialized properly here or in main.py
+# For brevity, assuming `legal_agent_graph` is imported or built globally here
+from agent.graph import build_legal_agent_graph
+legal_agent_graph = build_legal_agent_graph([]) # Provide actual tools here in production
+query_service = QueryService(settings.DATABASE_URL, legal_agent_graph)
 
-@router.post("/query", response_model=QueryResponse, dependencies=[Depends(rate_limit_dependency)])
-async def execute_query(request: QueryRequest):
-    """Executes a legal research query and returns the analyzed response."""
-    
-    query_id = str(uuid.uuid4())
-    
-    return QueryResponse(
-        query_id=query_id,
-        query=request.query,
-        answer="Based on the analysis of the provided jurisdiction, the statute applies.",
-        citations=[
-            SearchResult(
-                doc_id=str(uuid.uuid4()),
-                title="Constitutional Petition No. 123",
-                source="Supreme Court",
-                content_snippet="...the basic structure of the constitution mandates...",
-                score=0.95,
-                citation="PLD 2024 SC 1"
-            )
-        ],
-        sub_tasks=[
-            SubTask(
-                task_id=str(uuid.uuid4()),
-                description="Retrieve relevant statutes",
-                status="done"
-            )
-        ],
-        confidence_score=0.89,
-        tokens_used=1450,
-        latency_ms=1200
-    )
+router = APIRouter(prefix="/api/v1", tags=["query"])
 
-@router.get("/query/{query_id}", response_model=QueryResponse)
-async def get_query(query_id: str):
-    """Retrieves a previously executed query from the logs."""
-    
-    return QueryResponse(
-        query_id=query_id,
-        query="Mock historical query",
-        answer="Historical answer.",
-        citations=[],
-        sub_tasks=[],
-        confidence_score=0.99,
-        tokens_used=500,
-        latency_ms=450
-    )
+@router.post("/query", response_model=QueryResponse)
+async def submit_query(request: QueryRequest, user: dict = Depends(get_current_user)):
+    return await query_service.execute_query(request, user["user_id"])
 
-@router.get("/stream/{query_id}")
-async def stream_query(query_id: str):
-    """Streams the execution events of a running query via Server-Sent Events."""
-    
-    async def event_generator():
-        events = [
-            StreamEvent(event_type="thought", data="Analyzing jurisdiction constraints", timestamp=datetime.now(timezone.utc)),
-            StreamEvent(event_type="thought", data="Searching vector database", timestamp=datetime.now(timezone.utc)),
-            StreamEvent(event_type="result", data="Formulating final response", timestamp=datetime.now(timezone.utc))
-        ]
-        
-        for event in events:
-            await asyncio.sleep(0.5)
-            yield f"data: {event.model_dump_json()}\n\n"
-            
-    return StreamingResponse(event_generator(), media_type="text/event-stream")
+@router.get("/stream")
+async def stream_query(query: str, jurisdiction: str = "PK", doc_types: list[str] = Query(["statute", "case_law"]), user: dict = Depends(get_current_user)):
+    request = QueryRequest(query=query, jurisdiction=jurisdiction, doc_types=doc_types)
+    return StreamingResponse(query_service.stream_query(request, user["user_id"]), media_type="text/event-stream")
+
+@router.get("/history")
+async def get_history(limit: int = 20, user: dict = Depends(get_current_user)):
+    return await query_service.get_query_history(user["user_id"], limit)
