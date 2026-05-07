@@ -53,8 +53,11 @@ async def run_legal_query(graph, query: str, jurisdiction: str, doc_types: List[
         messages=[]
     )
     
+    # Setup configuration for LangSmith tracing
+    run_config = {"run_name": f"lexai_query_{query_id}"}
+    
     # Stream events from the graph execution
-    async for output in graph.astream(initial_state):
+    async for output in graph.astream(initial_state, config=run_config):
         # Find the node that just executed
         for node_name, state_update in output.items():
             # Yield any new stream events appended to the state
