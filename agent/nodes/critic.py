@@ -5,6 +5,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from agent.state import AgentState
 from agent.prompts.critic import CRITIC_SYSTEM_PROMPT
 from api.schemas.query import StreamEvent
+from api.metrics import CRITIC_SCORE
 
 async def critic_node(state: AgentState) -> AgentState:
     """
@@ -31,6 +32,10 @@ async def critic_node(state: AgentState) -> AgentState:
         
         # Decision logic for routing
         overall = state["overall_score"]
+        
+        # Record the critic score in Prometheus
+        CRITIC_SCORE.observe(overall)
+        
         retries = state.get("retry_count", 0)
         
         state["should_retry"] = bool(overall < 0.75 and retries < 2)
