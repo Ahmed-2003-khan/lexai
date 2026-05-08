@@ -1,0 +1,113 @@
+=== Section 299: Definitions ===
+
+In this Chapter, unless there is anything repugnant in the subject or context,—
+
+(a) “adult” means a person who has attained the age of eighteen years;
+
+(b) “arsh” means the compensation specified in this Chapter to be paid to the victim or his heirs under this Chapter;
+
+(c) “authorised medical officer” means a medical officer or a Medical Board, howsoever designated, authorised by the Provincial Government;
+
+(d) “daman” means the compensation determined by the Court to be paid by the offender to the victim for causing hurt not liable to arsh;
+
+(e) “diyat” means the compensation specified in section 323 payable to the heirs of the victim;
+
+(f) “Government” means the Provincial Government;
+
+(g) “ikrah-i-tam” means putting any person in fear of instant death or instant permanent impairment of any organ of the body or instant fear of being subjected to sodomy or zina-bil-jabr;
+
+(h) “isqat-i-haq” means the waiver of the right of qisas by the wali;
+
+(i) “itlaf-i-udw” means the dismemberment, amputation, severing or permanent disabling of any organ or limb of the body;
+
+(j) “jaifah” means injury through the cavity of the body;
+
+(k) “jurh” means hurt on any part of the body other than the head, face or neck;
+
+(l) “qisas” means punishment by causing similar hurt at the same part of the body of the convict as he has caused to the victim or by causing his death in the case of qatl-i-amd;
+
+(m) “wali” means a person entitled to claim qisas.
+
+This section serves as the foundational definitional provision for offences affecting the human body under the Pakistan Penal Code. The terms defined here are repeatedly used throughout the subsequent sections dealing with qatl, hurt, compensation, punishment and related concepts.
+
+=== Section 300: Qatl-i-Amd ===
+
+Whoever, with the intention of causing death or with the intention of causing bodily injury to a person, by doing an act which in the ordinary course of nature is likely to cause death, or with the knowledge that his act is so imminently dangerous that it must in all probability cause death, causes the death of such person, is said to commit qatl-i-amd.
+
+Explanation 1.—A person commits qatl-i-amd if he causes the death of another person by means of an act which he knows is likely to cause death.
+
+Explanation 2.—The causing of death may be direct or indirect so long as the act of the offender is sufficiently connected with the result.
+
+Illustration (a): A intentionally fires a loaded pistol at B at close range. B dies on the spot. A has committed qatl-i-amd.
+
+Illustration (b): A stabs B in the chest with a knife during a quarrel, knowing that such injury is likely to cause death. B later dies from the wound. A is guilty of qatl-i-amd.
+
+Illustration (c): A administers poison to B with the intention of causing death. B dies after consuming the poison. A has committed qatl-i-amd.
+
+Illustration (d): A deliberately pushes B from a high rooftop knowing that such act is imminently dangerous and likely to result in death. B dies from the fall. A is guilty of qatl-i-amd.
+
+This section lays down the ingredients of intentional homicide under Pakistani criminal law. The offence depends upon intention, knowledge, causation and the probability of death resulting from the accused’s act.
+
+=== Section 302: Punishment of Qatl-i-Amd ===
+
+Whoever commits qatl-i-amd shall, subject to the provisions of this Chapter, be—
+
+(a) punished with death as qisas;
+
+(b) punished with death or imprisonment for life as ta’zir having regard to the facts and circumstances of the case, if the proof in either of the forms specified in section 304 is not available; or
+
+(c) punished with imprisonment of either description for a term which may extend to twenty-five years, where according to the Injunctions of Islam the punishment of qisas is not applicable.
+
+Provided that nothing in clause (c) shall apply where the principle of fasad-fil-arz is attracted and in such cases only clause (a) or clause (b) shall apply.
+
+Explanation.—Qisas may be waived by the wali in accordance with the provisions of this Chapter.
+
+Illustration (a): A intentionally causes the death of B and the offence is proved through legally admissible evidence. A may be punished with death as qisas.
+
+Illustration (b): A causes the death of B, but the strict standard of proof required for qisas is unavailable. The Court may impose death or life imprisonment as ta’zir.
+
+Illustration (c): A minor or legally exempt person commits qatl-i-amd under circumstances where qisas cannot be enforced. The Court may award imprisonment under clause (c).
+
+This section prescribes punishments for intentional murder and distinguishes between qisas and ta’zir punishments under Pakistani criminal jurisprudence.
+
+=== Section 378: Theft ===
+
+Whoever, intending to take dishonestly any movable property out of the possession of any person without that person’s consent, moves that property in order to such taking, is said to commit theft.
+
+Explanation 1.—A thing so long as it is attached to the earth, not being movable property, is not the subject of theft; but it becomes capable of being the subject of theft as soon as it is severed from the earth.
+
+Explanation 2.—A moving effected by the same act which affects the severance may be a theft.
+
+Explanation 3.—A person is said to cause a thing to move by removing an obstacle which prevented it from moving or by separating it from any other thing, as well as by actually moving it.
+
+Explanation 4.—A person who, by any means, causes an animal to move is said to move that animal and to move everything which in consequence of the motion so caused is moved by that animal.
+
+Explanation 5.—The consent mentioned in this section may be express or implied, and may be given either by the person in possession or by any person having authority for that purpose.
+
+Illustration (a): A cuts down a tree on Z’s land with the intention of dishonestly taking the tree out of Z’s possession without Z’s consent. A has committed theft.
+
+Illustration (b): A puts a bait for Z’s dog intending that the dog may follow the bait and thereby come into A’s possession. A has committed theft.
+
+Illustration (c): A finds a ring belonging to Z on a table in Z’s house and dishonestly takes it away without consent. A commits theft.
+
+Illustration (d): A sees B’s bicycle parked outside a shop and secretly rides it away intending permanent deprivation. A commits theft.
+
+This section defines the essential ingredients of theft: dishonest intention, movable property, lack of consent and movement of the property.
+
+=== Section 415: Cheating ===
+
+Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property, or intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation or property, is said to “cheat”.
+
+Explanation.—A dishonest concealment of facts is a deception within the meaning of this section.
+
+Illustration (a): A falsely pretends to B that he owns a valuable plot of land and dishonestly induces B to pay money for it. A cheats B.
+
+Illustration (b): A deceives B into signing a document by falsely stating that it is a receipt when in fact it is a sale deed transferring property. A commits cheating.
+
+Illustration (c): A knowingly sells defective goods to B while concealing the defects and representing the goods as new and functional. A cheats B.
+
+Illustration (d): A promises employment to B in return for money while having no intention or authority to provide such employment. A commits cheating.
+
+Illustration (e): A intentionally conceals important information from B during a financial transaction, thereby causing wrongful loss to B and wrongful gain to himself. A is guilty of cheating.
+
+This section defines the offence of cheating and emphasizes deception, dishonest inducement and resulting harm or likelihood of harm as the essential ingredients of the offence.

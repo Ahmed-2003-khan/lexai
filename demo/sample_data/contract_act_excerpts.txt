@@ -1,0 +1,69 @@
+=== Section 10: What agreements are contracts ===
+
+All agreements are contracts if they are made by the free consent of parties competent to contract, for a lawful consideration and with a lawful object, and are not hereby expressly declared to be void.
+
+Nothing herein contained shall affect any law in force relating to the registration of documents.
+
+This section lays down the essential ingredients required for the formation of a valid and enforceable contract under the Contract Act, 1872. The first requirement is that there must be an agreement between two or more parties. Such agreement must arise from a lawful offer and lawful acceptance. Secondly, the consent of the parties must be free and not obtained through coercion, undue influence, fraud, misrepresentation or mistake. Thirdly, the parties entering into the agreement must be competent to contract according to the provisions of the Act. Fourthly, the agreement must be supported by lawful consideration and must have a lawful object. Agreements involving unlawful objects or consideration are void and unenforceable.
+
+The section further clarifies that contracts expressly declared void under the Act are not enforceable even if other essentials are fulfilled. Examples include agreements in restraint of marriage, trade or legal proceedings. The final paragraph preserves the operation of laws relating to registration of documents. Therefore, even if an agreement satisfies all contractual requirements, it may still require registration under applicable law to become legally effective.
+
+=== Section 11: Who are competent to contract ===
+
+Every person is competent to contract who is of the age of majority according to the law to which he is subject, and who is of sound mind, and is not disqualified from contracting by any law to which he is subject.
+
+This section defines the legal capacity required for entering into a valid contract. The first condition is attainment of the age of majority. A minor is not competent to contract and agreements entered into by a minor are generally void. The age of majority is determined according to the law applicable to the person concerned. Secondly, the person must be of sound mind at the time of making the contract. A person is said to be of sound mind if he is capable of understanding the contract and forming a rational judgment regarding its effects upon his interests.
+
+Persons suffering from temporary or permanent mental incapacity may not be competent to contract during periods of unsoundness. However, a person who is usually of unsound mind but occasionally of sound mind may make a contract during a lucid interval. Similarly, a person usually of sound mind but temporarily incapable due to illness, intoxication or other causes cannot validly contract during such incapacity.
+
+The third condition is that the person must not be disqualified from contracting by any law. Such disqualifications may apply to alien enemies, insolvents, convicts or corporations acting beyond their authority. This section therefore protects individuals lacking legal or mental capacity and ensures that only competent persons may create binding legal obligations.
+
+=== Section 17: “Fraud” defined ===
+
+“Fraud” means and includes any of the following acts committed by a party to a contract, or with his connivance, or by his agent, with intent to deceive another party thereto or his agent, or to induce him to enter into the contract:—
+
+(1) the suggestion, as a fact, of that which is not true, by one who does not believe it to be true;
+
+(2) the active concealment of a fact by one having knowledge or belief of the fact;
+
+(3) a promise made without any intention of performing it;
+
+(4) any other act fitted to deceive;
+
+(5) any such act or omission as the law specially declares to be fraudulent.
+
+Explanation.—Mere silence as to facts likely to affect the willingness of a person to enter into a contract is not fraud unless the circumstances of the case are such that, regard being had to them, it is the duty of the person keeping silence to speak, or unless his silence is, in itself, equivalent to speech.
+
+This section comprehensively defines fraud in contractual dealings. Fraud exists where deception is intentionally employed to induce another person into entering a contract. False statements knowingly made, concealment of material facts, false promises and deceptive conduct all amount to fraud under this section. The intention to deceive is an essential element.
+
+The explanation clarifies that silence alone does not ordinarily constitute fraud. However, silence may become fraudulent where there exists a duty to disclose information, such as in fiduciary relationships or contracts requiring utmost good faith. Silence may also amount to fraud when it conveys a misleading impression equivalent to an express statement.
+
+A contract induced by fraud is generally voidable at the option of the party deceived, and the injured party may also seek damages where appropriate.
+
+=== Section 56: Agreement to do impossible act ===
+
+An agreement to do an act impossible in itself is void.
+
+A contract to do an act which, after the contract is made, becomes impossible, or by reason of some event which the promisor could not prevent, unlawful, becomes void when the act becomes impossible or unlawful.
+
+Where one person has promised to do something which he knew, or with reasonable diligence might have known, and which the promisee did not know to be impossible or unlawful, such promisor must make compensation to such promisee for any loss which such promisee sustains through the non-performance of the promise.
+
+This section embodies the doctrine of impossibility and frustration of contract. The first paragraph states that agreements involving acts impossible from the beginning are void ab initio. For example, an agreement to discover treasure by magic or to perform an impossible physical act creates no legal obligation.
+
+The second paragraph addresses supervening impossibility. A valid contract may subsequently become void if performance becomes impossible or unlawful due to unforeseen events beyond the control of the parties. Such events may include destruction of subject matter, changes in law, war or natural disasters. Once impossibility occurs, parties are discharged from further performance.
+
+The final paragraph imposes liability upon a promisor who knowingly undertakes an impossible or unlawful act without informing the promisee. In such cases, the promisor must compensate the promisee for losses arising from non-performance. The section therefore balances fairness between contracting parties when performance cannot legally or practically occur.
+
+=== Section 73: Compensation for loss or damage caused by breach of contract ===
+
+When a contract has been broken, the party who suffers by such breach is entitled to receive, from the party who has broken the contract, compensation for any loss or damage caused to him thereby, which naturally arose in the usual course of things from such breach, or which the parties knew, when they made the contract, to be likely to result from the breach of it.
+
+Such compensation is not to be given for any remote and indirect loss or damage sustained by reason of the breach.
+
+Compensation for failure to discharge obligation resembling those created by contract.—When an obligation resembling those created by contract has been incurred and has not been discharged, any person injured by the failure to discharge it is entitled to receive the same compensation from the party in default as if such person had contracted to discharge it and had broken his contract.
+
+Explanation.—In estimating the loss or damage arising from a breach of contract, the means which existed of remedying the inconvenience caused by the non-performance of the contract must be taken into account.
+
+This section establishes the general rule for awarding damages for breach of contract. The injured party is entitled to compensation for losses naturally arising from the breach or losses reasonably contemplated by both parties at the time of contract formation. The objective is to place the injured party, as far as possible, in the same position as if the contract had been performed.
+
+However, damages cannot be claimed for remote or indirect consequences not reasonably foreseeable. The section also extends to obligations resembling contractual duties, such as quasi-contractual obligations. Courts must further consider whether the injured party took reasonable steps to minimize losses. This principle, commonly known as mitigation of damages, prevents recovery for avoidable harm.

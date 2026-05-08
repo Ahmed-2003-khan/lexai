@@ -1,0 +1,43 @@
+=== Section 496: In what cases bail to be taken ===
+
+When any person other than a person accused of a non-bailable offence is arrested or detained without warrant by an officer in charge of a police station, or appears or is brought before a Court, and is prepared at any time while in the custody of such officer or at any stage of the proceedings before such Court to give bail, such person shall be released on bail.
+
+Provided that such officer or Court, if he or it thinks fit, may instead of taking bail from such person, discharge him on his executing a bond without sureties for his appearance as hereinafter provided.
+
+This section deals with the right of an accused person to obtain bail in bailable offences. A bailable offence is one in which bail is considered a matter of right rather than judicial discretion. Therefore, once the accused offers to furnish bail, the police officer or the Court is legally bound to release him subject to the fulfillment of bail requirements.
+
+The proviso grants flexibility to the Court or police officer by allowing release on a personal bond without sureties where circumstances justify such relief. This is often exercised in cases involving minor offences, financially weak accused persons or situations where strict surety requirements may cause unnecessary hardship.
+
+The section embodies the principle that personal liberty should not be unnecessarily curtailed in cases involving less serious offences. It also ensures that detention before trial does not become punitive in nature. Courts while applying this section generally consider the nature of accusation, likelihood of absconding and the accused’s conduct.
+
+=== Section 497: When bail may be taken in case of non-bailable offence ===
+
+When any person accused of any non-bailable offence is arrested or detained without warrant by an officer in charge of a police station, or appears or is brought before a Court, he may be released on bail, but he shall not be so released if there appear reasonable grounds for believing that he has been guilty of an offence punishable with death or imprisonment for life or imprisonment for ten years:
+
+Provided that the Court may direct that any person under the age of sixteen years or any woman or any sick or infirm person accused of such an offence be released on bail.
+
+Provided further that a person shall not be denied bail merely on the ground that he is required for identification by witnesses during investigation unless such person is reasonably suspected of having committed an offence punishable with death or imprisonment for life.
+
+Provided further that the mere fact that a convicted person is entitled to file an appeal shall not by itself entitle him to be released on bail.
+
+If there are not reasonable grounds for believing that the accused has committed a non-bailable offence but there are sufficient grounds for further inquiry into his guilt, the accused shall, pending such inquiry, be released on bail.
+
+This section governs the grant of bail in non-bailable offences and confers discretionary powers upon the Court. Unlike bailable offences, bail in such matters is not automatic. The Court examines the available material to determine whether reasonable grounds exist connecting the accused with the alleged offence.
+
+The section creates an important distinction between “reasonable grounds” and “further inquiry.” Where evidence is doubtful or requires deeper examination, the accused may be granted bail as a matter of further inquiry. The provisos recognize humanitarian considerations in favour of minors, women, sick and infirm persons.
+
+Courts while exercising powers under this section commonly consider the seriousness of the accusation, possibility of tampering with evidence, previous criminal record, likelihood of absconding and delay in trial.
+
+=== Section 498: Power to direct admission to bail or reduction of bail ===
+
+The amount of every bond executed under this Chapter shall be fixed with due regard to the circumstances of the case and shall not be excessive; and the High Court or Court of Session may, in any case whether there be an appeal on conviction or not, direct that any person be admitted to bail, or that the bail required by a police officer or Magistrate be reduced.
+
+The High Court or Court of Session may, in exercise of its revisional jurisdiction, examine the legality or propriety of an order refusing bail and may pass such order as it deems fit in accordance with law.
+
+This section grants extensive powers to the High Court and Court of Session regarding bail matters. It ensures that bail conditions imposed by subordinate Courts or police authorities remain fair and proportionate to the circumstances of the accused and the nature of allegations.
+
+A fundamental principle reflected in this section is that bail should not be made illusory by fixing excessively high sureties beyond the financial capacity of the accused. The superior Courts therefore possess authority not only to grant bail but also to reduce the amount of bail where it appears oppressive or unreasonable.
+
+The section further enables superior Courts to review orders refusing bail and to correct errors arising from arbitrary or improper exercise of discretion. This supervisory jurisdiction acts as an important safeguard against misuse of authority and protects the constitutional right to liberty.
+
+While exercising powers under this section, the Courts generally evaluate the seriousness of the offence, available evidence, conduct of the accused, delay in conclusion of trial and broader interests of justice.
