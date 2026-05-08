@@ -22,6 +22,7 @@ services:
       - ../models:/app/models
       - ../scripts:/app/scripts
       - ../data:/app/data
+      - ../evals:/app/evals
     ports:
       - "8000:8000"
     networks:
@@ -40,6 +41,8 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
+    env_file:
+      - ../.env
     command: >
       bash -c "if [ -f 'models/dpr/query_encoder.onnx' ]; then python -m retriever.serve; else echo 'Models not found, skipping retriever'; sleep infinity; fi"
     volumes:

@@ -1,0 +1,45 @@
+# This file defines the infrastructure for LexAI on Render.com
+# It automatically provisions a Web Service, a PostgreSQL DB, and a Redis instance.
+
+services:
+  # 1. The main FastAPI application running via Docker
+  - type: web
+    name: lexai-api
+    env: docker
+    region: oregon # You can change this to your preferred region (e.g., frankfurt, singapore)
+    plan: free     # Upgrade to 'starter' for production if needed
+    healthCheckPath: /health
+    envVars:
+      # Automatically fetch the connection string from the PostgreSQL database created below
+      - key: DATABASE_URL
+        fromDatabase:
+          name: lexai-db
+          property: connectionString
+      # Automatically fetch the connection string from the Redis instance created below
+      - key: REDIS_URL
+        fromService:
+          type: redis
+          name: lexai-redis
+          property: connectionString
+      # OpenAI key must be provided manually in the Render dashboard (sync: false keeps it secure)
+      - key: OPENAI_API_KEY
+        sync: false
+      # Automatically generate a secure 256-bit random string for JWT authentication
+      - key: JWT_SECRET_KEY
+        generateValue: true
+
+  # 2. Redis instance for caching or background task queuing (if LangGraph needs it)
+  - type: redis
+    name: lexai-redis
+    region: oregon
+    plan: free # Upgrade to 'starter' for production if needed
+    ipAllowList: [] # Allows internal connections within Render by default
+
+databases:
+  # 3. PostgreSQL database with PGVector support
+  - name: lexai-db
+    databaseName: lexaidb
+    user: lexai
+    plan: free # Upgrade to 'starter' for production if needed
+    region: oregon
+    postgresMajorVersion: 16
