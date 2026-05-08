@@ -53,3 +53,6 @@ grafana_data/
 
 # Machine Learning Models
 models/
+
+# DeepEval
+evals/results/

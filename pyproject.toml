@@ -40,7 +40,8 @@ dependencies = [
     "deepeval",
     "prometheus-client",
     "prometheus-fastapi-instrumentator",
-    "sentry-sdk[fastapi]"
+    "sentry-sdk[fastapi]",
+    "httpx"
 ]
 
 [project.optional-dependencies]
