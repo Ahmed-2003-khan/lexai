@@ -1,5 +1,6 @@
 import time
 import uuid
+import os
 import sentry_sdk
 from fastapi import APIRouter, Depends, Query, HTTPException
 from fastapi.responses import StreamingResponse
@@ -12,10 +13,32 @@ from api.config import get_settings
 # Import the custom Prometheus metrics defined for LexAI
 from api.metrics import ACTIVE_QUERIES, QUERY_COUNTER, QUERY_LATENCY
 
+# --- NAYE IMPORTS TOOLS AUR RETRIEVER KE LIYE ---
+from agent.tools.legal_retriever import LegalVectorRetriever, create_legal_search_tool
+from retriever.engine import DPRInferenceEngine
+from agent.graph import build_legal_agent_graph
+
 settings = get_settings()
 
-from agent.graph import build_legal_agent_graph
-legal_agent_graph = build_legal_agent_graph([]) 
+# STEP 1: Embedder (DPR Engine) Setup Karein
+try:
+    dpr_engine = DPRInferenceEngine(
+        os.getenv("QUERY_ENCODER_PATH", "models/dpr/query_encoder.onnx"),
+        os.getenv("PASSAGE_ENCODER_PATH", "models/dpr/passage_encoder.onnx"),
+        os.getenv("TOKENIZER_PATH", "models/dpr/tokenizer")
+    )
+except Exception as e:
+    import logging
+    logging.warning(f"Could not load DPR engine in query router: {e}")
+    dpr_engine = None
+
+# STEP 2: Database Retriever aur Tool Setup Karein
+db_retriever = LegalVectorRetriever(db_url=settings.DATABASE_URL, embedder=dpr_engine)
+search_tool = create_legal_search_tool(db_retriever)
+
+# STEP 3: Graph ko Khali List [] ki bajaye Tool Pass Karein!
+legal_agent_graph = build_legal_agent_graph(tools=[search_tool]) 
+
 query_service = QueryService(settings.DATABASE_URL, legal_agent_graph)
 
 router = APIRouter(prefix="/api/v1", tags=["query"])

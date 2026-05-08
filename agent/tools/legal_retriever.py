@@ -83,19 +83,27 @@ def create_legal_search_tool(retriever: LegalVectorRetriever) -> StructuredTool:
     Factory function to create the LangChain tool wrapper for the retriever.
     """
     async def _search_func(query: str, jurisdiction: str = "PK", doc_types: List[str] = ["statute", "case_law"]) -> str:
-        results = await retriever.search(query=query, jurisdiction=jurisdiction, doc_types=doc_types)
-        
-        if not results:
-            return "No relevant legal documents found for this query."
+        # Map full country names to their standardized 2-letter jurisdiction codes used in the database
+        if jurisdiction.lower() in ["pakistan", "pk"]:
+            jurisdiction = "PK"
             
-        # Format the retrieved results into a readable string for the LLM
-        formatted_output = ""
-        for i, res in enumerate(results, 1):
-            formatted_output += f"--- Result {i} ---\n"
-            formatted_output += f"Title: {res.title}\nSource: {res.source}\nScore: {res.score:.4f}\n"
-            formatted_output += f"Content Snippet:\n{res.content}\n\n"
+        try:
+            results = await retriever.search(query=query, jurisdiction=jurisdiction, doc_types=doc_types)
             
-        return formatted_output
+            if not results:
+                return "No relevant legal documents found for this query."
+                
+            # Format the retrieved results into a readable string for the LLM
+            formatted_output = ""
+            for i, res in enumerate(results, 1):
+                formatted_output += f"--- Result {i} ---\n"
+                formatted_output += f"Title: {res.title}\nSource: {res.source}\nScore: {res.score:.4f}\n"
+                formatted_output += f"Content Snippet:\n{res.content_snippet}\n\n"
+                
+            return formatted_output
+        except Exception as e:
+            # Catch and return underlying database errors to the LLM to prevent silent failures
+            return f"Database Error: {str(e)}"
 
     return StructuredTool.from_function(
         func=None,
