@@ -1,3 +1,4 @@
+import os
 from typing import List
 from retriever.engine import DPRInferenceEngine
 
@@ -8,6 +9,11 @@ class DocumentEmbedder:
     """
 
     def __init__(self, query_encoder_path: str, passage_encoder_path: str, tokenizer_path: str):
+        # Limit thread usage to prevent WSL2 CPU/memory exhaustion
+        os.environ.setdefault("OMP_NUM_THREADS", "4")
+        os.environ.setdefault("MKL_NUM_THREADS", "4")
+        os.environ.setdefault("ONNXRUNTIME_NUM_THREADS", "4")
+
         try:
             self.dpr_engine = DPRInferenceEngine(query_encoder_path, passage_encoder_path, tokenizer_path)
             print("✅ DocumentEmbedder initialized with DPR ONNX Engine")

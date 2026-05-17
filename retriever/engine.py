@@ -16,21 +16,75 @@ class DPRInferenceEngine:
         tokenizer_path: str, 
         max_length: int = 256
     ):
-        """Initializes the ONNX runtime sessions and tokenizer."""
+        """Stores paths and tokenizer. ONNX sessions are loaded lazily on first use."""
         self.max_length = max_length
+        self._query_onnx_path = query_onnx_path
+        self._passage_onnx_path = passage_onnx_path
+
+        # Limit thread usage to prevent WSL2 CPU/memory exhaustion
+        os.environ.setdefault("OMP_NUM_THREADS", "4")
+        os.environ.setdefault("MKL_NUM_THREADS", "4")
+        os.environ.setdefault("ONNXRUNTIME_NUM_THREADS", "4")
+
+        self._sess_options = ort.SessionOptions()
+        self._sess_options.intra_op_num_threads = 4
+        self._sess_options.inter_op_num_threads = 4
+
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer_path)
 
-        providers = ["CPUExecutionProvider"]
-        
-        self.query_session = ort.InferenceSession(query_onnx_path, providers=providers)
-        self.passage_session = ort.InferenceSession(passage_onnx_path, providers=providers)
+        # Sessions are None until first use
+        self._query_session: ort.InferenceSession | None = None
+        self._passage_session: ort.InferenceSession | None = None
 
-        query_size_mb = os.path.getsize(query_onnx_path) / (1024 * 1024)
-        passage_size_mb = os.path.getsize(passage_onnx_path) / (1024 * 1024)
-
-        print(f"Loaded Query Encoder ONNX ({query_size_mb:.2f} MB)")
-        print(f"Loaded Passage Encoder ONNX ({passage_size_mb:.2f} MB)")
         print(f"Loaded Tokenizer from {tokenizer_path}")
+        print("ONNX sessions will be loaded lazily on first use.")
+
+    # ── Lazy loaders ──────────────────────────────────────────────────────────
+
+    def _get_query_session(self) -> ort.InferenceSession:
+        """Returns the query encoder session, loading it from disk if not yet loaded."""
+        if self._query_session is None:
+            size_mb = os.path.getsize(self._query_onnx_path) / (1024 * 1024)
+            print(f"[DPR] Loading Query Encoder ONNX ({size_mb:.2f} MB)...")
+            self._query_session = ort.InferenceSession(
+                self._query_onnx_path,
+                sess_options=self._sess_options,
+                providers=["CPUExecutionProvider"]
+            )
+        return self._query_session
+
+    def _get_passage_session(self) -> ort.InferenceSession:
+        """Returns the passage encoder session, loading it from disk if not yet loaded."""
+        if self._passage_session is None:
+            size_mb = os.path.getsize(self._passage_onnx_path) / (1024 * 1024)
+            print(f"[DPR] Loading Passage Encoder ONNX ({size_mb:.2f} MB)...")
+            self._passage_session = ort.InferenceSession(
+                self._passage_onnx_path,
+                sess_options=self._sess_options,
+                providers=["CPUExecutionProvider"]
+            )
+        return self._passage_session
+
+    # ── Unloaders ─────────────────────────────────────────────────────────────
+
+    def unload_query_session(self) -> None:
+        """Deletes the query encoder session and frees its memory."""
+        if self._query_session is not None:
+            del self._query_session
+            self._query_session = None
+            print("[DPR] Query encoder unloaded from memory.")
+
+    def unload_passage_session(self) -> None:
+        """Deletes the passage encoder session and frees its memory."""
+        if self._passage_session is not None:
+            del self._passage_session
+            self._passage_session = None
+            print("[DPR] Passage encoder unloaded from memory.")
+
+    def unload_all(self) -> None:
+        """Unloads both encoder sessions."""
+        self.unload_query_session()
+        self.unload_passage_session()
 
     def _tokenize(self, text: str) -> dict:
         """Tokenizes a single text string into numpy arrays required by ONNX."""
@@ -63,21 +117,21 @@ class DPRInferenceEngine:
     def embed_query(self, text: str) -> List[float]:
         """Generates a 768-dimensional normalized embedding for a search query."""
         inputs = self._tokenize(text)
-        outputs = self.query_session.run(None, inputs)
-        
+        outputs = self._get_query_session().run(None, inputs)
+
         last_hidden_state = outputs[0]
         embedding = self._mean_pool_and_normalize(last_hidden_state, inputs["attention_mask"])
-        
+
         return embedding.tolist()
 
     def embed_passage(self, text: str) -> List[float]:
         """Generates a 768-dimensional normalized embedding for a document passage."""
         inputs = self._tokenize(text)
-        outputs = self.passage_session.run(None, inputs)
-        
+        outputs = self._get_passage_session().run(None, inputs)
+
         last_hidden_state = outputs[0]
         embedding = self._mean_pool_and_normalize(last_hidden_state, inputs["attention_mask"])
-        
+
         return embedding.tolist()
 
     def embed_passages_batch(self, texts: List[str], batch_size: int = 32) -> List[List[float]]:
@@ -106,7 +160,7 @@ class DPRInferenceEngine:
             }
             
             # Execute the ONNX computation graph
-            outputs = self.passage_session.run(None, inputs)
+            outputs = self._get_passage_session().run(None, inputs)
             
             # Extract the hidden states from the model output
             last_hidden_states = outputs[0]

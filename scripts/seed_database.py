@@ -58,14 +58,13 @@ async def test_search(pipeline: IngestionPipeline, embedder: DocumentEmbedder, e
         "requirements for a valid contract",
         "bail conditions for non-bailable offence"
     ]
-    
+
     passed_all = True
     console.print("\n[bold cyan]Running Similarity Search Tests...[/bold cyan]")
-    
+
     async with pipeline.engine.connect() as conn:
         from sqlalchemy import text
         for q in queries:
-            
             # Select the appropriate embedding method based on the active engine
             if engine_is_dpr:
                 vec = embedder.dpr_engine.embed_query(q)
@@ -79,10 +78,10 @@ async def test_search(pipeline: IngestionPipeline, embedder: DocumentEmbedder, e
                 ORDER BY embedding <=> CAST(:vec AS vector) 
                 LIMIT 3
             """)
-            
+
             result = await conn.execute(query, {"vec": str(vec)})
             rows = result.fetchall()
-            
+
             console.print(f"\n[bold]Query:[/bold] '{q}'")
             has_good_match = False
             for row in rows:
@@ -90,7 +89,7 @@ async def test_search(pipeline: IngestionPipeline, embedder: DocumentEmbedder, e
                 console.print(f" - [{score:.4f}] {row[0]} ({row[1]})")
                 if score > 0.5:
                     has_good_match = True
-                    
+
             if not has_good_match:
                 passed_all = False
 
@@ -112,7 +111,7 @@ async def main():
         return
 
     console.print("[bold yellow]Initializing models and pipeline...[/bold yellow]")
-    
+
     dpr_engine = None
     if args.use_dpr:
         console.print("[blue]Loading ONNX DPR Models...[/blue]")
@@ -121,8 +120,12 @@ async def main():
             passage_onnx_path="models/dpr/passage_encoder.onnx",
             tokenizer_path="models/dpr/tokenizer"
         )
-    
-    embedder = DocumentEmbedder(dpr_engine=dpr_engine)
+
+    embedder = DocumentEmbedder(
+        query_encoder_path="models/dpr/query_encoder.onnx",
+        passage_encoder_path="models/dpr/passage_encoder.onnx",
+        tokenizer_path="models/dpr/tokenizer"
+    )
     pipeline = IngestionPipeline(db_url=db_url, embedder=embedder) if not args.dry_run else None
 
     if args.reset and not args.dry_run:
@@ -162,8 +165,11 @@ async def main():
             progress.advance(task)
 
     if not args.dry_run:
+        # Ingestion complete — free passage encoder memory before running search
+        if hasattr(embedder, "dpr_engine") and embedder.dpr_engine:
+            embedder.dpr_engine.unload_passage_session()
         stats = await pipeline.get_stats()
-        
+
     table = Table(title="LexAI Seed Data Summary")
     table.add_column("Document", style="cyan")
     table.add_column("Chunks", justify="right", style="green")
