@@ -50,7 +50,8 @@ async def synthesiser_node(state: AgentState) -> AgentState:
     response = await chain.ainvoke({
         "query": state["query"],
         "jurisdiction": state["jurisdiction"],
-        "context": context_block
+        "context": context_block,
+        "conversation_history": state.get("conversation_history", "")
     })
     
     state["draft_answer"] = response.content

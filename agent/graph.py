@@ -25,7 +25,13 @@ def build_legal_agent_graph(tools: list) -> StateGraph:
     
     # Define the sequential execution flow
     workflow.set_entry_point("planner")
-    workflow.add_edge("planner", "researcher")
+    
+    def decide_after_planner(state: AgentState) -> str:
+        if not state.get("is_relevant", True):
+            return END
+        return "researcher"
+        
+    workflow.add_conditional_edges("planner", decide_after_planner)
     workflow.add_edge("researcher", "synthesiser")
     workflow.add_edge("synthesiser", "critic")
     
@@ -39,7 +45,7 @@ def build_legal_agent_graph(tools: list) -> StateGraph:
     
     return workflow.compile()
 
-async def run_legal_query(graph, query: str, jurisdiction: str, doc_types: List[str], query_id: str) -> AsyncGenerator[str, None]:
+async def run_legal_query(graph, query: str, jurisdiction: str, doc_types: List[str], query_id: str, conversation_history: str = "") -> AsyncGenerator[str, None]:
     """
     Executes the compiled graph and yields real-time server-sent events (SSE).
     """
@@ -50,7 +56,8 @@ async def run_legal_query(graph, query: str, jurisdiction: str, doc_types: List[
         query_id=query_id,
         retry_count=0,
         stream_events=[],
-        messages=[]
+        messages=[],
+        conversation_history=conversation_history
     )
     
     # Setup configuration for LangSmith tracing
@@ -67,7 +74,7 @@ async def run_legal_query(graph, query: str, jurisdiction: str, doc_types: List[
                 yield f"data: {latest_event.model_dump_json()}\n\n"
                 
             # If the process is finishing, yield the final result
-            if node_name == "critic" and not state_update.get("should_retry"):
+            if (node_name == "critic" and not state_update.get("should_retry")) or (node_name == "planner" and not state_update.get("is_relevant", True)):
                 final_response = {
                     "answer": state_update.get("final_answer", ""),
                     "citations": state_update.get("citations", []),

@@ -23,3 +23,5 @@ class AgentState(TypedDict):
     query_id: str
     error: Optional[str]
     stream_events: List[StreamEvent]
+    conversation_history: str
+    is_relevant: bool

@@ -27,7 +27,8 @@ async def planner_node(state: AgentState) -> AgentState:
     response = await chain.ainvoke({
         "query": state["query"],
         "jurisdiction": state["jurisdiction"],
-        "doc_types": ", ".join(state.get("doc_types", []))
+        "doc_types": ", ".join(state.get("doc_types", [])),
+        "conversation_history": state.get("conversation_history", "")
     })
     
     try:
@@ -41,19 +42,25 @@ async def planner_node(state: AgentState) -> AgentState:
         if raw_content.endswith("```"):
             raw_content = raw_content[:-3]
             
-        plan = json.loads(raw_content.strip())
+        parsed = json.loads(raw_content.strip())
         
-        # Ensure it's a list
-        if isinstance(plan, dict) and "plan" in plan:
-            plan = plan["plan"]
-        elif not isinstance(plan, list):
-            plan = [state["query"]]
+        if isinstance(parsed, dict):
+            state["is_relevant"] = parsed.get("is_relevant", True)
+            state["plan"] = parsed.get("plan", [])
+            if not state["is_relevant"]:
+                state["final_answer"] = parsed.get("direct_answer", "Hello! I am LexAI. I can only assist with legal matters. How can I help you today?")
+                state["should_retry"] = False
+        elif isinstance(parsed, list):
+            state["is_relevant"] = True
+            state["plan"] = parsed
+        else:
+            state["is_relevant"] = True
+            state["plan"] = [state["query"]]
             
-        state["plan"] = plan
-        
     except Exception as e:
         logging.error(f"Error in planner_node: {e} - Raw Output: {response.content}")
-        # Bulletproof Fallback: If JSON parsing completely fails, just use the original query as the only task
+        # Bulletproof Fallback: Assume it's relevant and just use the original query
+        state["is_relevant"] = True
         state["plan"] = [state["query"]]
         
     return state
