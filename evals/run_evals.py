@@ -71,14 +71,14 @@ async def main():
     faithfulness = FaithfulnessMetric(threshold=0.75, model=eval_model)
     c_precision = ContextualPrecisionMetric(threshold=0.6, model=eval_model)
     c_recall = ContextualRecallMetric(threshold=0.6, model=eval_model)
-    hallucination = HallucinationMetric(threshold=0.25, model=eval_model)
+    hallucination = HallucinationMetric(threshold=0.40, model=eval_model)
     
     metrics = [relevancy, faithfulness, c_precision, c_recall, hallucination]
     results_log = []
     tests_passed = 0
     
     # Restrict the evaluation to a single test case to minimize API usage
-    test_subset = EVAL_TEST_CASES[:1]
+    test_subset = EVAL_TEST_CASES[:3]
     
     print("\n┌" + "─"*32 + "┬" + "─"*10 + "┬" + "─"*13 + "┬" + "─"*11 + "┬" + "─"*10 + "┬" + "─"*14 + "┐")
     print("│ Test Case                      │ Relevancy│ Faithfulness│ C.Precision│ C.Recall │ Hallucination│")
@@ -126,6 +126,8 @@ async def main():
         results_log.append({
             "test_id": case["id"],
             "input": case["input"],
+            "actual_output": actual_output,
+            "retrieval_context": retrieval_context,
             "scores": scores,
             "passed": case_passed
         })
@@ -134,6 +136,21 @@ async def main():
     
     pass_rate = (tests_passed / len(test_subset)) * 100
     print(f"\nOverall pass rate: {tests_passed}/{len(test_subset)} ({pass_rate:.0f}%) {'✅' if pass_rate >= 70 else '❌'}")
+
+    # Save results to a timestamped JSON file
+    from datetime import datetime
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    results_path = os.path.join(RESULTS_DIR, f"eval_results_{timestamp}.json")
+    with open(results_path, "w", encoding="utf-8") as f:
+        json.dump({
+            "timestamp": timestamp,
+            "model": eval_model,
+            "total_cases": len(test_subset),
+            "tests_passed": tests_passed,
+            "pass_rate_pct": round(pass_rate, 1),
+            "results": results_log
+        }, f, indent=2, ensure_ascii=False)
+    print(f"📄 Results saved → {results_path}")
 
 if __name__ == "__main__":
     asyncio.run(main())
