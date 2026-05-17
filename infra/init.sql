@@ -9,6 +9,10 @@ CREATE TABLE documents (
     jurisdiction TEXT NOT NULL,
     doc_type TEXT NOT NULL CHECK (doc_type IN ('statute', 'case_law', 'article')),
     content TEXT NOT NULL,
+    section_title TEXT,
+    is_continuation BOOLEAN DEFAULT FALSE,
+    chunk_index INTEGER,
+    total_chunks INTEGER,
     embedding vector(768),
     created_at TIMESTAMPTZ DEFAULT now()
 );
@@ -47,3 +51,27 @@ CREATE TABLE IF NOT EXISTS query_logs (
     response JSONB,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
+
+-- Conversations table (one per chat session)
+CREATE TABLE IF NOT EXISTS conversations (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    title TEXT NOT NULL DEFAULT 'New Conversation',
+    jurisdiction TEXT DEFAULT 'PK',
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_conversations_user_id ON conversations(user_id);
+
+-- Individual messages within a conversation
+CREATE TABLE IF NOT EXISTS conversation_messages (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    conversation_id UUID NOT NULL REFERENCES conversations(id) ON DELETE CASCADE,
+    role TEXT NOT NULL CHECK (role IN ('user', 'assistant')),
+    content TEXT NOT NULL,
+    metadata JSONB DEFAULT '{}',
+    created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_conv_messages_conv_id ON conversation_messages(conversation_id);
