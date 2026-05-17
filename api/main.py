@@ -92,6 +92,8 @@ async def request_logging_middleware(request: Request, call_next):
     response.headers["X-Trace-Id"] = trace_id
     return response
 
+from api.routes import health, query, ingest, auth, documents, conversations
+
 # Configure Prometheus to expose standard HTTP metrics
 instrumentator = Instrumentator(
     should_group_status_codes=False,
@@ -107,4 +109,5 @@ app.include_router(health.router, prefix="/health")
 app.include_router(auth.router)
 app.include_router(documents.router)
 app.include_router(query.router)
+app.include_router(conversations.router)
 app.include_router(ingest.router, prefix="/api/v1")

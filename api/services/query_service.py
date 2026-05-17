@@ -29,11 +29,11 @@ class QueryService:
         finally:
             await conn.close()
 
-    async def execute_query(self, request: QueryRequest, user_id: str, query_id: str) -> QueryResponse:
+    async def execute_query(self, request: QueryRequest, user_id: str, query_id: str, conversation_history: str = "") -> QueryResponse:
         """Executes a legal query, waits for the final response, and logs the execution."""
         final_response = None
         
-        async for event in run_legal_query(self.agent_graph, request.query, request.jurisdiction, request.doc_types, query_id):
+        async for event in run_legal_query(self.agent_graph, request.query, request.jurisdiction, request.doc_types, query_id, conversation_history):
             if event.startswith("data: "):
                 try:
                     data = json.loads(event.replace("data: ", "").strip())
@@ -51,9 +51,9 @@ class QueryService:
             )
         raise ValueError("Failed to generate response")
 
-    async def stream_query(self, request: QueryRequest, user_id: str, query_id: str) -> AsyncGenerator[str, None]:
+    async def stream_query(self, request: QueryRequest, user_id: str, query_id: str, conversation_history: str = "") -> AsyncGenerator[str, None]:
         """Streams the response events of a legal query in real-time."""
-        async for event in run_legal_query(self.agent_graph, request.query, request.jurisdiction, request.doc_types, query_id):
+        async for event in run_legal_query(self.agent_graph, request.query, request.jurisdiction, request.doc_types, query_id, conversation_history):
             yield event
             if "event_type" in event and "result" in event:
                 try:

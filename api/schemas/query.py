@@ -4,7 +4,7 @@ from pydantic import BaseModel, Field
 
 
 class QueryRequest(BaseModel):
-    query: str = Field(min_length=10, max_length=2000)
+    query: str = Field(min_length=2, max_length=2000)
     jurisdiction: Optional[str] = Field(default="PK")
     doc_types: Optional[List[str]] = Field(default=["statute", "case_law"])
 
